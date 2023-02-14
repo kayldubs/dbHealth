@@ -1,0 +1,44 @@
+.footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-height: 150px;
+    
+}
+
+.section1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* float:right; */
+}
+
+.section2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    float:right;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    /* padding: 2rem; */
+}
+
+/* start media quieries  */
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: 410px;
+    }
+    .footerType {
+        margin-top: 160px;
+    }
+    .section2, .section1 {
+        margin-bottom: 10px;
+    }
+}

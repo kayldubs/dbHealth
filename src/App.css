@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family:"Source San Pro";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --navy: rgb(72;98;144);
+  --midBlue: rgb(39;170;225);
+  --black: rgb(0;0;0);
+  --greyBlue:rgb(106;138;175);
+  --offWhite: rgb(226;232;221);
+  --warmTaupe: rgb(205;198;174);
+}
