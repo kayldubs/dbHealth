@@ -1,4 +1,4 @@
-import { CardContent, CardMedia } from '@mui/material';
+import { CardMedia } from '@mui/material';
 import Logo from '../../assests/imgs/DBSoloLogo.svg';
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';

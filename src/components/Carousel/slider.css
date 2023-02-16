@@ -110,8 +110,8 @@
       display: flex;
       position: relative;
       justify-content: center;
-      width: 350px;
-      height: 200px;
+      width: 360px;
+      height: 210px;
       margin-left: 30px;
     }
     @keyframes slide-up {
@@ -152,9 +152,9 @@
         max-height: 350px;
     }
     .content {
-      width: 240px;
-      height: 205px;
-      transform: translate(-80%, -177%);
+      width: 250px;
+      height: 210px;
+      transform: translate(-75%, -175%);
       margin-top: 30px;
       font-size: 12px;
     }
@@ -189,9 +189,9 @@
         margin-top: 50px;
       }
       .content {
-        width: 300px;
-        height: 280px;
-        transform: translate(-95%, -165%);
+        width: 310px;
+        height: 290px;
+        transform: translate(-90%, -160%);
         margin-top: 30px;
         font-size: 12px;
       }
@@ -225,9 +225,9 @@
     height: 900px;
   }
   .content {
-    transform: translate(-115%, -172%);
-    width: 320px;
-    height: 320px;
+    transform: translate(-112%, -172%);
+    width: 330px;
+    height: 330px;
   }
   .tag {
     font-size: 18px;
