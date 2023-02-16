@@ -45,10 +45,10 @@ export default function Team() {
           lg: "row",
           xl: "row",
         }}
-        justifyContent={{ xs: "center", sm: "center", md: "center" }}
-        alignItems={{ xs: "center", sm: "center", md: "center" }}
+        justifyContent={{ xs: "center", sm: "center", md: "center", lg: "center", xl:"center" }}
+        alignItems={{ xs: "center", sm: "center", md: "center",lg: "center", xl:"center" }}
         className="topEmpGrid"
-        flexWrap='nowrap'
+        flexWrap="nowrap"
       >
         <Card class="media1">
           <CardMedia
@@ -58,6 +58,7 @@ export default function Team() {
             style={{
               height: "300px",
               width: "300px",
+              marginLeft: '50px'
             }}
           />
           <CardContent>
@@ -69,7 +70,7 @@ export default function Team() {
 
               <Typography
                 style={{
-                  width: "250px",
+                  width: "350px",
                   flexWrap: "nowrap",
                   height: "0px",
                   textAlign: "center",
@@ -77,11 +78,19 @@ export default function Team() {
                 }}
                 className="text"
               >
-                Trauma Surgeon located in the North Central Florida area with a
-                background in medicine and applied mathematics. As the founder
-                and CEO, Winston has seen through the development of the
-                Digibeat Electronic Stethoscope from its original prototype
-                developed in Winston’s garage.
+                Winstons is a practicing surgeon located in North Central
+                Florida with a background in medicine, applied mathematics, and
+                electrical engineering from Penn State University and Princeton
+                University. Winston continued on to be a key investigator in 37
+                research trials raising over $600k in sponsored notices of
+                awards(NOA). He has over 20 years experience as a practicing ER
+                surgeon. 21 medical publications, experience as an assistant
+                dean at University of Florida, and a vast network of key medical
+                decision makers and practitioners. Winston’s credentials not
+                only allowed him to see a better future for the medical
+                industry; but he was able to conceptualize the first DigiBeat
+                stethoscope and continues its development to surpass current
+                medical standards.
               </Typography>
             </div>
           </CardContent>
@@ -95,6 +104,7 @@ export default function Team() {
               height: "300px",
               width: "300px",
               flexWrap: "nowrap",
+              marginLeft:'40px'
             }}
           />
           <CardContent>
@@ -106,19 +116,26 @@ export default function Team() {
 
               <Typography
                 style={{
-                  width: "250px",
+                  width: "350px",
                   flexWrap: "nowrap",
                   height: "0px",
                   textAlign: "center",
-                  marginLeft: "10px",
+                  marginLeft: "0px",
                 }}
                 className="text"
               >
-                Cliff has a background in Aeronautical, Aerospace and
-                Astronautical Engineering from Embry-Riddle Aeronautical
-                University. He focuses on project organization while being the
-                brains behind the engineering that goes into developing the
-                Digibeat Electronic Stethoscope.
+                Cliffords earned his aerospace engineering degree from Embry
+                Riddle aeronautical university while working in the skydiving
+                industry developing and testing parachute equipment. He
+                co-founded a product development firm that provided clients:
+                design, engineering, and manufacturing/assembly services to
+                bring their ideas to market. Through this experience he raised
+                capital, built teams, and developed internal IP, on over 30
+                products that are currently sold through various e-commerce and
+                big box stores. Cliff gained two years experience in the medical
+                device design and manufacturing field from his contract work at
+                Philips healthcare. There he launched new MRI coils from design
+                through production and validation.
               </Typography>
             </div>
           </CardContent>
@@ -131,6 +148,7 @@ export default function Team() {
             style={{
               height: "300px",
               width: "300px",
+              marginLeft:'40px'
             }}
           />
           <CardContent>
@@ -142,7 +160,7 @@ export default function Team() {
 
               <Typography
                 style={{
-                  width: "250px",
+                  width: "350px",
                   flexWrap: "wrap",
                   height: "0px",
                   textAlign: "center",
@@ -150,12 +168,15 @@ export default function Team() {
                 }}
                 className="text"
               >
-                Karl earned his BS and ME in electrical and computer engineering
-                followed by a Ph.D. in biomedical engineering (neural
-                engineering focus) from the University of Florida. Karl is well
-                versed in the design of computer hardware, intelligent
-                information processing, machine learning, and adaptation of
-                neuronal networks.
+                Karl earned both electrical and computer engineering degrees
+                before following up with his Ph.D. in biomedical engineering
+                (neural engineering) from the University of Florida. Karl has
+                broad computer vision, machine learning, cloud, embedded device,
+                and IP protection experience with a long history of funding,
+                executing, and achieving goals in self-directed projects like,
+                DARPA programs, and at startups. As part of Paracosm over $5M
+                was raised and he was also Principal Investigator for winning a
+                $17M DARPA ML proposal.
               </Typography>
             </div>
           </CardContent>

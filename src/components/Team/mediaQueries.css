@@ -17,11 +17,11 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         position: relative;
-        /* margin-top: 20px; */
+        margin-top: 20px;
         justify-content: center;
     }
     .media1, .media2, .media3 {
-        margin-bottom: 300px;
+        margin-bottom: 420px;
     }
     .empIcons {
         flex-direction: column;
@@ -41,7 +41,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         position: relative;
-        margin-top: 20px;
+        margin-top: 150px;
         justify-content: center;
     }
     .empIcons2 {
@@ -63,14 +63,14 @@
         float: left;
     }
     .media1, .media2, .media3 {
-        padding: 50px;
+        padding: 40px;
     }   
 }
 
 @media screen and (min-width: 960px) {
-    .media1, .media2, .media3 {
+    /* .media1, .media2, .media3 {
         margin-right: 20px;
-    }   
+    }    */
     .topEmpGrid {
         flex-wrap: nowrap;
     }

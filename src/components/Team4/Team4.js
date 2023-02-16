@@ -65,7 +65,8 @@ function Featured() {
       className="employeeGrid"
       style={{
         justifyContent: "center",
-        marginBottom: "200px",
+        marginTop: "30px",
+        marginBottom: "50px",
         alignItems: "stretch",
       }}
     >
