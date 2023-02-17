@@ -5,56 +5,55 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 
 import {Card, Grid} from '@mui/material';
 //import Paper from '@mui/material/Paper';
-import { makeStyles } from '@material-ui/core/styles';
 
 //css import 
 import './slider2.css'
 
 
 
-const useStyles = makeStyles((theme) => ({
-    featureCard: {
-      fontSize:'40px', 
-      fontFamily:'Source San Pro, sans-serif',
-      fontWeight:'Bold',
-      paddingBottom: '50px',
-      display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        textAlign:'center',
-        textDecoration: 'underline',
-        textDecorationColor: '#6a8aaf',
-        maxWidth:'100%',
-        heght:'100%',
-        margin:'auto'
+// const useStyles = makeStyles((theme) => ({
+//     featureCard: {
+//       fontSize:'40px', 
+//       fontFamily:'Source San Pro, sans-serif',
+//       fontWeight:'Bold',
+//       paddingBottom: '50px',
+//       display: 'flex',
+//         justifyContent: 'center',
+//         alignItems: 'center',
+//         textAlign:'center',
+//         textDecoration: 'underline',
+//         textDecorationColor: '#6a8aaf',
+//         maxWidth:'100%',
+//         heght:'100%',
+//         margin:'auto'
         
-    },
-    featureSubtext: {
-      paddingTop: '80px',
-      marginBottom: '200px',
-      maxWidth: '100%',
-      height: "100%",
-      textAlign:'center',
-      fontSize:'20px',
-      fontFamily:'Source San Pro, sans-serif',
-    },
-    keyFeatures: {
-        fontFamily:'Source San Pro, sans-serif',
-        fontWeight:'Bold',
-        fontSize:'36px',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        textDecoration: 'underline',
-        textDecorationColor: '#6a8aaf',
-        marginBottom: '30px'
-      }
-}))
+//     },
+//     featureSubtext: {
+//       paddingTop: '80px',
+//       marginBottom: '200px',
+//       maxWidth: '100%',
+//       height: "100%",
+//       textAlign:'center',
+//       fontSize:'20px',
+//       fontFamily:'Source San Pro, sans-serif',
+//     },
+//     keyFeatures: {
+//         fontFamily:'Source San Pro, sans-serif',
+//         fontWeight:'Bold',
+//         fontSize:'36px',
+//         display: 'flex',
+//         justifyContent: 'center',
+//         alignItems: 'center',
+//         textDecoration: 'underline',
+//         textDecorationColor: '#6a8aaf',
+//         marginBottom: '30px'
+//       }
+// }))
 
 
 
 const ImageSlider = ({ slides }) => {
-    const classes = useStyles();
+    // const classes = useStyles();
 const [current, setCurrent] = useState(0)
 const length = slides.length
 
@@ -72,10 +71,10 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 
     return (
     <Grid container row={{xs: 2, sm: 1, lg: 1, xl: 1}} columnSpacing={{ xs: 1, sm: 2, md: 2, lg: 1, xl: 1}} alignItems='stretch'>
-        <h1 className={classes.featureCard} class='featureCard'>The Future of Medical Examinations</h1>
+        <h1 className='featureCard'>The Future of Medical Examinations</h1>
         <Grid container justifyContent='center' alignItems='stretch' minWidth='100vw' row={{xs: 0, sm: 1, md: 12}} columnSpacing={{xs:1, sm: 1, md: 0}}>
       <Card className='col-lg-6 info-plane'>
-        <div className={classes.featureSubtext} class='featureSub' item xs={12} sm={12} md={12} lg={12} xl={12} >
+        <div className='featureSub' item xs={12} sm={12} md={12} lg={12} xl={12} >
         <h2>DigiBeat's patented and intuitive design </h2>
         <p className='desc'>Using wireless technology, our stethescope brings your health and patient accessibility into the modern age.</p>
         <br></br>
