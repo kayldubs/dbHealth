@@ -18,6 +18,7 @@ import About from './components/About/about';
 import Footer from './components/Footer';
 import Team from './components/Team/Team';
 import Team4 from './components/Team4/Team4';
+import Blog from './components/Blog/Blog';
 
 //import CSS Boostrap 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -103,6 +104,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
             <Team />
             <Team4 />
             </Route>
+            <Route exact path="/blog"> <Blog/> </Route>
             </Switch>
           <Footer />
         {/* </Provider> */}

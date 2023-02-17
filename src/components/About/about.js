@@ -94,6 +94,9 @@ export default function About() {
                             <a href='/faq' style={{textDecoration:'none'}}>
                             <Button variant="outlined">FAQ</Button>
                             </a>
+                            <a href='/blog' style={{textDecoration:'none'}}>
+                            <Button variant="outlined">BLOG</Button>
+                            </a>
                         </Stack>
                     </Container>
 
