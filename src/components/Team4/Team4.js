@@ -12,6 +12,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CardMedia from "@mui/material/CardMedia";
 
 import "../Team/mediaQueries.css";
+import Container from '@mui/material/Container';
 
 const theme = createTheme({
   breakpoints: {
@@ -57,23 +58,24 @@ function Featured() {
   };
   //const [text, setText] =useState({firstDiv:0, secondDiv:0, thirdDiv:0})
   return (
-    <Grid
+    <Container
       container
       spacing={{ xs: 1, xl: 1 }}
       mt={{ xs: "" }}
       rowGap={{ xl: 1 }}
       className="employeeGrid"
       style={{
+        display:'flex',
         justifyContent: "center",
         marginTop: "30px",
-        marginBottom: "50px",
+        marginBottom: "70px",
         alignItems: "stretch",
       }}
     >
       <Card
+      className='card'
         sx={{
-          display: "flex",
-          flexWrap: "nowrap",
+          display: "grid",
           outline: "solid",
           outlineColor: "#6a8aaf",
         }}
@@ -87,7 +89,7 @@ function Featured() {
       >
         <CardContent
           sx={{ flex: 1 }}
-          style={{ backgroundColor: "#d6d6d6", width: "300px" }}
+          style={{ backgroundColor: "#d6d6d6" }}
         >
           <PrecisionManufacturingIcon
             className="empIcons"
@@ -97,7 +99,7 @@ function Featured() {
               backgroundColor: "#6a8aaf",
               borderRadius: "10px",
               position: "absolute",
-              top: "45px",
+              top: "0px",
             }}
           />
           <Typography
@@ -126,12 +128,12 @@ function Featured() {
       <Card
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
-        sx={{ display: "flex", outline: "solid", outlineColor: "#6a8aaf" }}
-        style={{ margin: "65px" }}
+        sx={{ outline: "solid", outlineColor: "#6a8aaf" }}
+        style={{ margin: "65px" }} className='card'
       >
         <CardContent
           sx={{ flex: 1 }}
-          style={{ backgroundColor: "#d6d6d6", width: "300px" }}
+          style={{ backgroundColor: "#d6d6d6" }}
         >
           <InsightsIcon
             className="empIcons2"
@@ -141,7 +143,7 @@ function Featured() {
               backgroundColor: "#6a8aaf",
               borderRadius: "10px",
               position: "absolute",
-              top: "45px",
+              top: "0px",
             }}
           />
           <Typography
@@ -169,12 +171,12 @@ function Featured() {
       <Card
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
-        sx={{ display: "flex", outline: "solid", outlineColor: "#6a8aaf" }}
-        style={{ margin: "65px" }}
+        sx={{ outline: "solid", outlineColor: "#6a8aaf" }}
+        style={{ margin: "65px" }} className='card'
       >
         <CardContent
           sx={{ flex: 1 }}
-          style={{ backgroundColor: "#d6d6d6", width: "300px" }}
+          style={{ backgroundColor: "#d6d6d6", }}
         >
           <DesignServicesIcon
             className="empIcons3"
@@ -184,7 +186,7 @@ function Featured() {
               backgroundColor: "#6a8aaf",
               borderRadius: "10px",
               position: "absolute",
-              top: "45px",
+              top: "0px",
             }}
           />
           <Typography
@@ -208,7 +210,7 @@ function Featured() {
           )}
         </CardContent>
       </Card>
-    </Grid>
+    </Container>
   );
 }
 export default Featured;

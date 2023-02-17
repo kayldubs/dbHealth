@@ -14,41 +14,28 @@
 
 @media screen and (min-width: 320px) {
     .employeeGrid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        position: relative;
-        margin-top: 20px;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
     }
     .media1, .media2, .media3 {
-        margin-bottom: 420px;
+        margin-bottom: 450px;
     }
-    .empIcons {
-        flex-direction: column;
-    }
-    .empIcons2 {
-        flex-direction: column;
-        margin-top: 513px;
-    }
-    .empIcons3 {
-        flex-direction: column;
-        margin-top: 983px;
+    .card {
+        width: 300px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .employeeGrid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        position: relative;
-        margin-top: 150px;
-        justify-content: center;
-    }
     .empIcons2 {
        margin-top: 0px;
     }
     .empIcons3 {
-        margin-top: 250px;
+        top:0px;
+    }
+    .card {
+        width: 300px;
     }
 }
 
@@ -64,19 +51,38 @@
     }
     .media1, .media2, .media3 {
         padding: 40px;
-    }   
+    } 
+    .employeeGrid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .card {
+        width: 400px;
+        margin: 0 40px 0px 40px;
+    }
+     
 }
 
 @media screen and (min-width: 960px) {
-    /* .media1, .media2, .media3 {
-        margin-right: 20px;
-    }    */
     .topEmpGrid {
         flex-wrap: nowrap;
+        margin-right: 20px;
     }
-    .empIcons3 {
-        margin-top: 250px;
+    .empIcons2, .empIcons3, .empIcons {
+        position: absolute;
+        margin-bottom: 40px;
+        left:0px;
+    } 
+    .employeeGrid {
+        display: flex;
+        flex-direction: row;
     }
+    .card {
+        width: 500px;
+        margin: 0 40px 0px 40px;
+    }
+    
 }
 
 @media screen and (min-width: 1282px) {

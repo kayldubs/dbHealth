@@ -45,8 +45,20 @@ export default function Team() {
           lg: "row",
           xl: "row",
         }}
-        justifyContent={{ xs: "center", sm: "center", md: "center", lg: "center", xl:"center" }}
-        alignItems={{ xs: "center", sm: "center", md: "center",lg: "center", xl:"center" }}
+        justifyContent={{
+          xs: "center",
+          sm: "center",
+          md: "center",
+          lg: "center",
+          xl: "center",
+        }}
+        alignItems={{
+          xs: "center",
+          sm: "center",
+          md: "center",
+          lg: "center",
+          xl: "center",
+        }}
         className="topEmpGrid"
         flexWrap="nowrap"
       >
@@ -58,7 +70,7 @@ export default function Team() {
             style={{
               height: "300px",
               width: "300px",
-              marginLeft: '50px'
+              marginLeft: "50px",
             }}
           />
           <CardContent>
@@ -104,7 +116,7 @@ export default function Team() {
               height: "300px",
               width: "300px",
               flexWrap: "nowrap",
-              marginLeft:'40px'
+              marginLeft: "40px",
             }}
           />
           <CardContent>
@@ -148,7 +160,7 @@ export default function Team() {
             style={{
               height: "300px",
               width: "300px",
-              marginLeft:'40px'
+              marginLeft: "40px",
             }}
           />
           <CardContent>
@@ -176,7 +188,12 @@ export default function Team() {
                 executing, and achieving goals in self-directed projects like,
                 DARPA programs, and at startups. As part of Paracosm over $5M
                 was raised and he was also Principal Investigator for winning a
-                $17M DARPA ML proposal.
+                $17M DARPA ML proposal. Otherwise he has 5 patents, 7
+                publications, and continues his own projects to advance
+                technology. Karl’s extensive knowledge, especially with training
+                data, allows him to guide
+                DigiBeat to be able to bring a traditional stethoscope into our
+                modern age.
               </Typography>
             </div>
           </CardContent>
