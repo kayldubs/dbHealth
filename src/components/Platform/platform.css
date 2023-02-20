@@ -1,0 +1,36 @@
+/* Text styling */
+.ptag {
+text-align: left;
+display: flex;
+flex-direction: column;
+padding: 10px;
+margin: none;
+float: left;
+font-size: 18px;
+}
+.title {
+/* text-align: center; */
+color: #81cdee;
+}
+.title2 {
+color:#ae96be;
+
+}
+.title3 {
+color:grey;
+}
+.subTitle {
+font-size: 18px;
+}
+.copy {
+padding-bottom: 2rem;
+}
+
+/* start media queries */
+
+@media screen and (max-width: 768px) {
+    .platformContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}

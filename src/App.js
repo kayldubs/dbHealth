@@ -10,7 +10,7 @@ import ImageSlider from './components/Slider-2/ImageSlider';
 import { SliderData } from './components/Slider-2/SliderData';
 import ImageHero from './components/Carousel/ImageHero';
 import { HeroData } from './components/Carousel/HeroData';
-
+import Platform from './components/Platform/Platform';
 import Faq from './components/FAQ/Faq.js';
 import About from './components/About/about';
 // import Payer from './components/Payer';
@@ -92,6 +92,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
               <Route exact path="/"> 
                 <ImageHero slides={HeroData} /> 
                 <ImageSlider slides={SliderData} menu={TextData}/>
+                <Platform />
                 <Features currentCategory={currentCategory} />
                 <Form></Form>
               </Route> 
