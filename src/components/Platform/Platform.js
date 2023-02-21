@@ -9,46 +9,46 @@ import { Card, CardContent, CardMedia, Grid } from "@mui/material";
 function Platform() {
   return (
     <Container container>
-      <h1 class="features">DigiBeat Platform</h1>
-      <div style={{
+      <h1 className="platHeader">DigiBeat Platform</h1>
+      <div 
+      className='platformContainer'
+       style={{
         display:'flex',
         flexDirection:'row'
       }}
       >
-        <Card style={{alignItems:'center', marginRight:'20px'}}>
-          <div>
+        <Card className="platCard" style={{alignItems:'center', marginRight:'20px'}}>
             <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={patient}
+              className="platMedia3"
               style={{
                 width:'300px',
-                height:'300px',
-                paddingLeft: '60px'
+                height:'300px'
               }}
             />
             <CardContent>
-              <div>
-                <h1 className="title">Intuitive At Home Patient Exams</h1>
+              
+                <h1 className="title">Intuitive Patient Application For At Home Exams</h1>
                 <h2 className="ptag">
                   Patients Remotely complete heart exams using the DigiBeat
                   Stethoscope and the smart phone application
                 </h2>
-              </div>
+              
             </CardContent>
-          </div>
+      
         </Card>
         <br></br>
-        <Card style={{marginRight:'20px'}}>
-          <div style={{ alignItems:'center'}}>
+        <Card className="platCard" style={{marginRight:'20px'}}>
             <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={flow}
+              className="platMedia"
               style={{
                 width:'300px',
-                height:'300px',
-                paddingLeft: '60px'
+                height:'300px'
               }}
             />
             <CardContent>
@@ -60,32 +60,27 @@ function Platform() {
                 </h2>
               </div>
             </CardContent>
-          </div>
         </Card>
         <br></br>
-        <Card>
-          <div>
+        <Card className="platCard">
             <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={dr}
+              className="platMedia2"
               style={{
                 width:'300px',
-                height:'300px',
-                paddingLeft: '100px'
+                height:'300px'
               }}
             />
             <CardContent>
-              <div>
                 <h1 className="title">Best In Class Data Analysis Dashboard</h1>
                 <h2 className="ptag">
                   Physicians can easily track recordings for all patients,
                   review their trends, and utilize AI processing to make care
                   determinations
                 </h2>
-              </div>
             </CardContent>
-          </div>
         </Card>
       </div>
       <br></br>

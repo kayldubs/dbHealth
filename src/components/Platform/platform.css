@@ -1,4 +1,15 @@
 /* Text styling */
+.platHeader {
+        display: flex;
+        margin:50px 50px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight:900;
+        font-size: 48px;
+        text-decoration: underline;
+        text-decoration-color:#6a8aaf;
+        position: relative;
+        justify-content: center;
+}
 .ptag {
 text-align: left;
 display: flex;
@@ -26,11 +37,54 @@ font-size: 18px;
 padding-bottom: 2rem;
 }
 
+.platMedia {
+    padding-left: 60px;
+}
+
+.platMedia2 {
+    padding-left: 100px;
+}
+.platMedia3 {
+    padding-left: 50px;
+}
+
 /* start media queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
     .platformContainer {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .platHeader {
+        display: flex;
+        flex-wrap: nowrap;   
+    }
+    .platCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .platMedia, .platMedia2, .platMedia3 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1201px) {
+    .platHeader {
+        display: flex;
+        justify-content: center;
+    }
+    .platMedia3 {
+        padding-right: 20px;
+        padding-left: 0px;
+    }
+    .platMedia2 {
+        padding-left: 30px;
+    }
+    .platMedia {
+        padding-left: 0px;
+        padding-right: 10px;
     }
 }
