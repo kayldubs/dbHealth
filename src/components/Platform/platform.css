@@ -1,3 +1,8 @@
+.platMedia, .platMedia2, .platMedia3 {
+    width: 300px;
+    height: 300px;
+}
+
 /* Text styling */
 .platHeader {
         display: flex;
@@ -37,7 +42,7 @@ font-size: 18px;
 padding-bottom: 2rem;
 }
 
-.platMedia {
+/* .platMedia {
     padding-left: 60px;
 }
 
@@ -46,11 +51,14 @@ padding-bottom: 2rem;
 }
 .platMedia3 {
     padding-left: 50px;
-}
+} */
 
 /* start media queries */
 
 @media screen and (max-width: 960px) {
+    .title {
+        font-size: 26px;
+        }
     .platformContainer {
         display: flex;
         flex-direction: column;
@@ -68,6 +76,8 @@ padding-bottom: 2rem;
     .platMedia, .platMedia2, .platMedia3 {
         padding-left: 0px;
         padding-right: 0px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -75,6 +85,7 @@ padding-bottom: 2rem;
     .platHeader {
         display: flex;
         justify-content: center;
+        flex-wrap: nowrap;
     }
     .platMedia3 {
         padding-right: 20px;

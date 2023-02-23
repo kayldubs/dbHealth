@@ -24,8 +24,7 @@ function Platform() {
               image={patient}
               className="platMedia3"
               style={{
-                width:'300px',
-                height:'300px'
+                objectFit:'contain'
               }}
             />
             <CardContent>
@@ -47,8 +46,7 @@ function Platform() {
               image={flow}
               className="platMedia"
               style={{
-                width:'300px',
-                height:'300px'
+                objectFit:'contain'
               }}
             />
             <CardContent>
@@ -69,8 +67,7 @@ function Platform() {
               image={dr}
               className="platMedia2"
               style={{
-                width:'300px',
-                height:'300px'
+                objectFit:'contain'
               }}
             />
             <CardContent>
