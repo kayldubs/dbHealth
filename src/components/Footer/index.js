@@ -75,9 +75,9 @@ function Footer() {
             Regulatory
         </Typography>
         <Link color="inherit" href="/regulatory">
-        ISO
+        Terms of Use
       </Link>
-      <Link color="inherit" href="/510(k)">
+      {/* <Link color="inherit" href="/510(k)">
         510(k)
       </Link>
       <Link color="inherit" href="/hippa">
@@ -85,7 +85,7 @@ function Footer() {
       </Link>
       <Link color="inherit" href="/ficoPolicy">
         FICO Policy
-      </Link>
+      </Link> */}
       </div>
       <div className='section2' style={{marginBottom:'180px'}}>
       <Typography fontWeight='bold'>

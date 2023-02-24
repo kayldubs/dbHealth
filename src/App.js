@@ -18,6 +18,7 @@ import About from './components/About/about';
 import Footer from './components/Footer';
 import Team from './components/Team/Team';
 import Team4 from './components/Team4/Team4';
+import Terms from './components/Regulatory/TermsOfUse'
 
 //import CSS Boostrap 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -105,6 +106,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
             <Team4 />
             </Route>
             </Switch>
+            <Route exact path="/regulatory"> <Terms/> </Route>
           <Footer />
         {/* </Provider> */}
     </div>
