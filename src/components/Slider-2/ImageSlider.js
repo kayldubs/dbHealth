@@ -121,7 +121,7 @@ const ImageSlider = ({ slides }) => {
             marginTop:'20px',
             fontWeight:'bold'
         }}
-        >**The services we provide are not intended to replace consultation with a qualified healthcare professional or serve as a substitute to any medical diagnosis or treatment.</h3>
+        >**The services we provide are not intended to replace consultation with a qualified healthcare professional or serve as a substitute to any medical diagnosis or treatment. The device is not approved for human use at this time.**</h3>
           </div>
         </Card>
         <br></br>
