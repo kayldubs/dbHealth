@@ -4,8 +4,8 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import MainFeaturedPost from './MainFeaturedPost';
-//import FeaturedPost from './FeaturedPost';
-// import Main from './Main';
+import FeaturedPost from './FeaturedPosts';
+import Main from './Main';
 // import Sidebar from './Sidebar';
 
  import post1 from './posts/post1'
@@ -86,24 +86,22 @@ export default function Blog() {
       <CssBaseline />
       <Container maxWidth="lg">
         <main>
-          <MainFeaturedPost post={mainFeaturedPost} />
+          <div style={{paddingTop:'50px'}}>
+          <MainFeaturedPost post={mainFeaturedPost}/>
+          </div>
           <Grid container spacing={4}>
-            {/* {featuredPosts.map((post) => (
-              <Card key={post.title} post={post} >
-                <CardContent>
-                    <h1>{post.title}</h1>
-                </CardContent>
-                 <Card/>
-            ))} */}
+            {featuredPosts.map((post) => (
+              <FeaturedPost key={post.title} post={post} />
+            ))}
           </Grid>
-          {/* <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose" posts={posts} /> */}
+          <Grid container spacing={5} sx={{ mt: 3 }}>
+            <Main title="From the firehose" posts={posts} />
             {/* <Sidebar
               title={sidebar.title}
               description={sidebar.description}
-              archives={sidebar.archives}
+              social={sidebar.social}
             /> */}
-          {/* </Grid>  */}
+          </Grid>
         </main>
       </Container>
     </ThemeProvider>
