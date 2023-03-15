@@ -98,15 +98,19 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
               <Features currentCategory={currentCategory} />
               <Form/>
               </>} />
-            
-            <Route exact path="/faq" element={<Faq/>} />
-            <Route exact path="/about" element={<About/>} />
-            <Route exact path="/about" element={<Team />} />
-            <Route exact path="/about" element={<Team4/>} />
-            
-            <Route exact path="/regulatory" element={<Terms/>} /> 
-          <Route element={<Footer/>} />
+            <Route path="/faq" element={<>
+            <Faq/>
+            </>} />
+            <Route path="/about" element={<>
+            <About/>
+            <Team/>
+            <Team4/>
+            </>} />
+          <Route exact path="/regulatory" element={<>
+          <Terms/>
+          </>} /> 
           </Routes>
+          <Footer/>
           {/* </Provider> */}
     </div>
  
