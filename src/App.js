@@ -1,6 +1,6 @@
 //import Logo from './assests/imgs/DB_Logo.pdf';
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 //import components(pages to then insert into the return JXS function)
 import Nav from './components/Nav';
@@ -19,6 +19,7 @@ import Footer from './components/Footer';
 import Team from './components/Team/Team';
 import Team4 from './components/Team4/Team4';
 import Terms from './components/Regulatory/TermsOfUse'
+
 
 //import CSS Boostrap 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -85,32 +86,30 @@ function App() {
 const [currentCategory, setCurrentCategory] = useState(categories[0]);
   return(
   // <ApolloProvider client={client}>
-  <Router>
+  
     <div className='App'> 
         {/* <Provider> */}
           <Nav />
-          <Switch>
-              <Route exact path="/"> 
-                <ImageHero slides={HeroData} /> 
-                <ImageSlider slides={SliderData} menu={TextData}/>
-                <Platform />
-                <Features currentCategory={currentCategory} />
-                <Form></Form>
-              </Route> 
-              <Route  exact path="/contactForm"> <Form/> </Route>
-            {/* <Route exact path="/Payer" component={Payer} /> */}
-            {/* <Route exact path="/Physician" component={Physician} /> */}
-            <Route exact path="/faq"> <Faq/> </Route>
-            <Route exact path="/about"> <About/>
-            <Team />
-            <Team4 />
-            </Route>
-            </Switch>
-            <Route exact path="/regulatory"> <Terms/> </Route>
-          <Footer />
-        {/* </Provider> */}
+          <Routes>
+              <Route path="/" element={<>
+              <ImageHero slides={HeroData}/>
+              <ImageSlider slides={SliderData} menu={TextData}/>
+              <Platform/>
+              <Features currentCategory={currentCategory} />
+              <Form/>
+              </>} />
+            
+            <Route exact path="/faq" element={<Faq/>} />
+            <Route exact path="/about" element={<About/>} />
+            <Route exact path="/about" element={<Team />} />
+            <Route exact path="/about" element={<Team4/>} />
+            
+            <Route exact path="/regulatory" element={<Terms/>} /> 
+          <Route element={<Footer/>} />
+          </Routes>
+          {/* </Provider> */}
     </div>
-   </Router>
+ 
 // </ApolloProvider>
 );
 }
