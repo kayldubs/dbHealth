@@ -109,6 +109,9 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           <Route exact path="/regulatory" element={<>
           <Terms/>
           </>} /> 
+          <Route exact path="/contactForm" element={<>
+          <Form/>
+          </>} />
           </Routes>
           <Footer/>
           {/* </Provider> */}

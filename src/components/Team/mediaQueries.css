@@ -63,7 +63,7 @@
         float: left;
     }
     .media1, .media2, .media3 {
-        padding: 50px;
+        padding: 20px;
         margin-bottom: 300px;
     }  
 }
@@ -72,9 +72,9 @@
     .media1, .media2, .media3 {
         margin-right: 20px;
     }   
-    .topEmpGrid {
-        flex-wrap: nowrap;
-    }
+    /* .topEmpGrid {
+        
+    } */
     .empIcons3 {
         margin-top: 250px;
     }
