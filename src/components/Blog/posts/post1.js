@@ -5,18 +5,21 @@ import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import { Link } from "react-router-dom";
 
-function Post1() {
+
+
+const Post1 = () => {
+
     return (
         <Container>
             <Box className='top-box'>
             <Typography>
-                <h1>Title of Main Post</h1>
+                <h1>Main Post title</h1>
             </Typography>
             </Box>
-            <Card style={{margin:'10px'}}>
-            <Typography style={{padding:'10px'}}>
-                <h2 className='question'>Subheader of main article</h2>
-                <p className='answer'>Body of main article</p>
+            <Card>
+            <Typography>
+                <h2 className='question'>SubHeader</h2>
+                <p className='answer'>Article Body</p>
             </Typography>
             </Card>
             <Link variant="subtitle1" href="#">
@@ -24,5 +27,6 @@ function Post1() {
         </Container>
     );
 }
+
 
 export default Post1;
