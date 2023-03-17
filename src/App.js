@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-//import components(pages to then insert into the return JXS function)
 import Nav from './components/Nav';
 import Features from './components/Features';
 import Form from './components/Contact/Form';

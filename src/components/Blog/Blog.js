@@ -12,7 +12,7 @@ import FeaturedPost from './FeaturedPost';
 import Main from './Main';
 import Sidebar from './Sidebar';
 // import Footer from './Footer';
-import post1 from './posts/Post1.js';
+import Post1 from './posts/Post1.js';
 // import post2 from './blog-post.2.md';
 // import post3 from './blog-post.3.md';
 
@@ -57,7 +57,7 @@ const featuredPosts = [
   },
 ];
 
-const posts = [post1 
+const posts = [Post1 
     //post2, post3
 ];
 
