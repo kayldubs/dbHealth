@@ -13,7 +13,7 @@ import { HeroData } from './components/Carousel/HeroData';
 import Platform from './components/Platform/Platform';
 import Faq from './components/FAQ/Faq.js';
 import About from './components/About/about';
-// import Payer from './components/Payer';
+import Blog from './components/Blog/Blog';
 // import Physician from './components/Physician';
 import Footer from './components/Footer';
 import Team from './components/Team/Team';
@@ -108,6 +108,9 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
             </>} />
           <Route exact path="/regulatory" element={<>
           <Terms/>
+          </>} /> 
+          <Route exact path="/blog" element={<>
+          <Blog/>
           </>} /> 
           </Routes>
           <Footer/>
