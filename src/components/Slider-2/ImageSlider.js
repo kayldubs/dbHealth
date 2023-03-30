@@ -137,7 +137,7 @@ const ImageSlider = ({ slides }) => {
                 {index === current && (
                   <img
                     src={slide.image}
-                    alt="device angles"
+                    alt="wireless stethoscope showing all of the device features and angles. This includes power button, volume control, and C-charging port."
                     className="image"
                   />
                 )}
