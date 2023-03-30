@@ -66,7 +66,7 @@ export default function Team() {
           <CardMedia
             component="img"
             image={winston}
-            alt="random"
+            alt="Doctor Winston T. Richards, founder of DigiBeat and CMO."
             style={{
               height: "300px",
               width: "300px",
@@ -111,7 +111,7 @@ export default function Team() {
           <CardMedia
             component="img"
             image={cliff}
-            alt="random"
+            alt="Clifford Steele CEO of DigiBeat"
             style={{
               height: "300px",
               width: "300px",
@@ -156,7 +156,7 @@ export default function Team() {
           <CardMedia
             component="img"
             image={karll}
-            alt="random"
+            alt="Karl Dockendorf, CTO of DigiBeat"
             style={{
               height: "300px",
               width: "300px",

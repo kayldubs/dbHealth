@@ -10,74 +10,76 @@ function Platform() {
   return (
     <Container container>
       <h1 className="platHeader">DigiBeat Platform</h1>
-      <div 
-      className='platformContainer'
-       style={{
-        display:'flex',
-        flexDirection:'row'
-      }}
+      <div
+        className="platformContainer"
+        style={{
+          display: "flex",
+          flexDirection: "row",
+        }}
       >
-        <Card className="platCard" style={{alignItems:'center', marginRight:'20px'}}>
-            <CardMedia
-              component="img"
-              alt="heart with connections to DigiBeat Logo"
-              image={patient}
-              className="platMedia3"
-              style={{
-                objectFit:'contain'
-              }}
-            />
-            <CardContent>
-              
-                <h1 className="title">Intuitive Patient Application For At Home Exams</h1>
-                <h2 className="ptag">
-                  Patients Remotely complete heart exams using the DigiBeat
-                  Stethoscope and the smart phone application
-                </h2>
-              
-            </CardContent>
-      
+        <Card
+          className="platCard"
+          style={{ alignItems: "center", marginRight: "20px" }}
+        >
+          <CardMedia
+            component="img"
+            alt="Patient uses her DigiBeat wireless stethoscope to conduct an in home patient exam assisted with agumented reality"
+            image={patient}
+            className="platMedia3"
+            style={{
+              objectFit: "contain",
+            }}
+          />
+          <CardContent>
+            <h1 className="title">
+              Intuitive Patient Application For At Home Exams
+            </h1>
+            <h2 className="ptag">
+              Patients Remotely complete heart exams using the DigiBeat
+              Stethoscope and the smart phone application
+            </h2>
+          </CardContent>
         </Card>
         <br></br>
-        <Card className="platCard" style={{marginRight:'20px'}}>
-            <CardMedia
-              component="img"
-              alt="heart with connections to DigiBeat Logo"
-              image={flow}
-              className="platMedia"
-              style={{
-                objectFit:'contain'
-              }}
-            />
-            <CardContent>
-              <div class="flex-row">
-                <h1 className="title">Robust Physician Exam Workflow</h1>
-                <h2 className="ptag">
-                  Physicians complete exams in clinic with high accuracy.
-                  Recordings are sent directly to physician dashboard
-                </h2>
-              </div>
-            </CardContent>
+        <Card className="platCard" style={{ marginRight: "20px" }}>
+          <CardMedia
+            component="img"
+            alt="DigiBeat's mobile application doctors can use to review patient results. Patients can also review their results at home with DigiBeat's app platform"
+            image={flow}
+            className="platMedia"
+            style={{
+              objectFit: "contain",
+            }}
+          />
+          <CardContent>
+            <div class="flex-row">
+              <h1 className="title">Robust Physician Exam Workflow</h1>
+              <h2 className="ptag">
+                Physicians complete exams in clinic with high accuracy.
+                Recordings are sent directly to physician dashboard
+              </h2>
+            </div>
+          </CardContent>
         </Card>
         <br></br>
         <Card className="platCard">
-            <CardMedia
-              component="img"
-              alt="heart with connections to DigiBeat Logo"
-              image={dr}
-              className="platMedia2"
-              style={{
-                objectFit:'contain'
-              }}
-            />
-            <CardContent>
-                <h1 className="title">Best In Class Data Analysis Dashboard</h1>
-                <h2 className="ptag">
-                  Physicians can easily track recordings for all patients,
-                  review their trends, and utilize AI processing to make care
-                  determinations
-                </h2>
-            </CardContent>
+          <CardMedia
+            component="img"
+            alt="Ipad showing DigiBeat's full analysis platform where doctors can check the results of their patient's in home exam and use Artificial Intelligence to diagnose"
+            image={dr}
+            className="platMedia2"
+            style={{
+              objectFit: "contain",
+            }}
+          />
+          <CardContent>
+            <h1 className="title">Best In Class Data Analysis Dashboard</h1>
+            <h2 className="ptag">
+              Physicians can easily track recordings for all patients, review
+              their trends, and utilize AI processing to make care
+              determinations
+            </h2>
+          </CardContent>
         </Card>
       </div>
       <br></br>
