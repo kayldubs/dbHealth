@@ -12,7 +12,7 @@ import FeaturedPost from './FeaturedPost';
 import Main from './Main';
 import Sidebar from './Sidebar';
 // import Footer from './Footer';
-import Post1 from './posts/Post1.js';
+//import Post1 from './posts/post1.js';
 // import post2 from './blog-post.2.md';
 // import post3 from './blog-post.3.md';
 
@@ -57,9 +57,9 @@ const featuredPosts = [
   },
 ];
 
-const posts = [Post1 
+//const posts = [Post1 
     //post2, post3
-];
+//];
 
 const sidebar = {
   title: 'About',
@@ -88,7 +88,9 @@ export default function Blog() {
             ))}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From DigiBeat" posts={posts} />
+            <Main title="From DigiBeat"
+            //  posts={posts} 
+             />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
