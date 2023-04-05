@@ -18,14 +18,14 @@ import About from './components/About/about';
 import Footer from './components/Footer';
 import Team from './components/Team/Team';
 import Team4 from './components/Team4/Team4';
-import Terms from './components/Regulatory/TermsOfUse'
-
+import Terms from './components/Regulatory/TermsOfUse';
 
 //import CSS Boostrap 
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Expletus Sans Font
 import "@fontsource/expletus-sans"
 import { TextData } from './components/Carousel/TextData';
+import ESummary from './components/ESummary/ES';
 
 
 
@@ -112,7 +112,9 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           <Route exact path="/contactForm" element={<>
           <Form/>
           </>} />
+          <Route exact path="/esummary" element={<ESummary/>} />
           </Routes>
+          
           <Footer/>
           {/* </Provider> */}
     </div>
