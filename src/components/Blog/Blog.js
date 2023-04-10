@@ -30,10 +30,10 @@ const sections = [
 ];
 
 const mainFeaturedPost = {
-  title: 'Title of a longer featured blog post',
+  title: "In Depth Analysis and Purpose of DigiBeat's Digital Stethoscope",
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: 'https://source.unsplash.com/random',
+    "This article will expolore the reasons and features that make our digital stethoscope the best choice for the future of medicine",
+  image: 'https://mcusercontent.com/f78a01ed120667028e9e65574/images/a6a2b96f-6aba-25b3-534a-6a0946c3f6cf.jpg',
   imageText: 'main image description',
   linkText: 'Continue reading…',
 };
@@ -62,13 +62,26 @@ const featuredPosts = [
 //];
 
 const sidebar = {
-  title: 'About',
+  title: 'About Our Blog',
   description:
-    'Information center for everything about DigiBeat and More',
+    "Here you will find everything you need to know about DigiBeat's portable and wireless technology, how it improve heart disease prevention, benefits of incorporating this device into your caridology practices, and much more general health information.",
   social: [
     // { name: 'GitHub', icon: GitHubIcon },
     { name: 'Twitter', icon: TwitterIcon },
     // { name: 'Facebook', icon: FacebookIcon },
+  ],
+  archives: [
+    { title: 'March 2020', url: '#' },
+    { title: 'February 2020', url: '#' },
+    { title: 'January 2020', url: '#' },
+    { title: 'November 1999', url: '#' },
+    { title: 'October 1999', url: '#' },
+    { title: 'September 1999', url: '#' },
+    { title: 'August 1999', url: '#' },
+    { title: 'July 1999', url: '#' },
+    { title: 'June 1999', url: '#' },
+    { title: 'May 1999', url: '#' },
+    { title: 'April 1999', url: '#' },
   ],
 };
 
@@ -79,8 +92,8 @@ export default function Blog() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg" padding="50px">
-        <h1 title="Blog" sections={sections} />
-        <main>
+        <main style={{padding:'50px 50px'}}>
+        <h1 title="Blog" sections={sections} style={{fontFamily:'Expletus Sans', textAlign:'center', fontSize:'3rem', marginBottom:'50px'}}>BLOG</h1>
           <MainFeaturedPost post={mainFeaturedPost} style={{paddingTop:'50px'}} />
           <Grid container spacing={4}>
             {featuredPosts.map((post) => (
@@ -88,8 +101,8 @@ export default function Blog() {
             ))}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From DigiBeat"
-            //  posts={posts} 
+            <Main title="Most Recent From DigiBeat"
+                style={{fontFamily:'Expletus Sans', textAlign:'center'}} 
              />
             <Sidebar
               title={sidebar.title}

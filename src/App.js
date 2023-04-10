@@ -25,6 +25,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import Expletus Sans Font
 import "@fontsource/expletus-sans"
 import { TextData } from './components/Carousel/TextData';
+import HeroPost from './components/Blog/posts/HeroPost';
 
 
 
@@ -111,6 +112,8 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           <Route exact path="/blog" element={<>
           <Blog/>
           </>} /> 
+          <Route exact path="/blog/heropost" element={<HeroPost/>} />
+          <Route exact path='/contactForm' element={<Form/>} />
           </Routes>
           <Footer/>
           {/* </Provider> */}
