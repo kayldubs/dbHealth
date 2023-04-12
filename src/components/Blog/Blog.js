@@ -11,6 +11,7 @@ import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
 import Main from './Main';
 import Sidebar from './Sidebar';
+import Header from './Header';
 // import Footer from './Footer';
 //import Post1 from './posts/post1.js';
 // import post2 from './blog-post.2.md';
@@ -18,15 +19,9 @@ import Sidebar from './Sidebar';
 
 const sections = [
   { title: 'Technology', url: '#' },
-  { title: 'Design', url: '#' },
-  { title: 'Culture', url: '#' },
-  { title: 'Business', url: '#' },
-  { title: 'Politics', url: '#' },
-  { title: 'Opinion', url: '#' },
   { title: 'Science', url: '#' },
   { title: 'Health', url: '#' },
   { title: 'Style', url: '#' },
-  { title: 'Travel', url: '#' },
 ];
 
 const mainFeaturedPost = {
@@ -40,18 +35,18 @@ const mainFeaturedPost = {
 
 const featuredPosts = [
   {
-    title: 'Featured post',
-    date: 'Nov 12',
+    title: "Heart Disease Frequently Asked Questions. Answered by DigiBeat's Dr.Richards",
+    date: 'April 12',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      "Heart Disease is common amoung American's, with this there is endless information available. Here is what you need to know.",
     image: 'https://source.unsplash.com/random',
     imageLabel: 'Image Text',
   },
   {
-    title: 'Post title',
-    date: 'Nov 11',
+    title: "Why Cardiologist should integrate DigiBeat's Digital Stethoscope into their practices",
+    date: 'April 13',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      'Explore the technological, patient, and economic benefits of the DigiBeat stethoscope',
     image: 'https://source.unsplash.com/random',
     imageLabel: 'Image Text',
   },
@@ -94,6 +89,7 @@ export default function Blog() {
       <Container maxWidth="lg" padding="50px">
         <main style={{padding:'50px 50px'}}>
         <h1 title="Blog" sections={sections} style={{fontFamily:'Expletus Sans', textAlign:'center', fontSize:'3rem', marginBottom:'50px'}}>BLOG</h1>
+        <Header title="Blog" sections={sections} />
           <MainFeaturedPost post={mainFeaturedPost} style={{paddingTop:'50px'}} />
           <Grid container spacing={4}>
             {featuredPosts.map((post) => (

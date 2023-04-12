@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { Container } from "@mui/material";
+import { Container, CardMedia } from "@mui/material";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
@@ -81,6 +81,18 @@ const HeroPost = () => {
               signal processor that filters out background noise and enhances
               sound quality, allowing for a more accurate diagnosis.
             </p>
+            <CardMedia
+              component="img"
+              alt="front facing angle of the digibeat remote stethoscope showcasing the volume control and power button"
+              src="https://mcusercontent.com/f78a01ed120667028e9e65574/images/d309afbc-889e-6b3c-6731-5f5646d29df2.png"
+              style={{
+                width:'200px',
+                height:'200px',
+                display:'flex',
+                float:'right',
+                marginTop:'30px'
+              }}
+            />
             <h3>Features and Benefits of the Digibeat Stethoscope</h3>
             <p>
               One of the many significant benefits of the Digibeat Stethoscope
