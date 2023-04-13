@@ -18,7 +18,7 @@ import Footer from './components/Footer';
 import Team from './components/Team/Team';
 import Team4 from './components/Team4/Team4';
 import Terms from './components/Regulatory/TermsOfUse'
-
+import Technology from './components/Blog/pages/Technology';
 
 //import CSS Boostrap 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -113,6 +113,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           <Blog/>
           </>} /> 
           <Route exact path="/blog/heropost" element={<HeroPost/>} />
+          <Route exact path="/blog/technology" element={<Technology/>} />
           <Route exact path='/contactForm' element={<Form/>} />
           </Routes>
           <Footer/>

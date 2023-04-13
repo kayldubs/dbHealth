@@ -38,7 +38,7 @@ const HeroPost = () => {
             marginBottom:'20px'
         }}
         >
-        <Typography >
+        <Typography style={{margin:'auto'}}>
           <h1 style={{marginBottom:'35px'}}>
             In Depth Analysis and Purpose of DigiBeat's Digital Stethoscope
           </h1>
@@ -47,20 +47,20 @@ const HeroPost = () => {
               Digital Stethoscope.
             </h2>
         </Typography>
-        <div style={{maxWidth:'400px'}}>
+        </div>
+        <div>
+        <div style={{maxWidth:'400px', display: "flex",
+                float: "right", flexDirection:'column'}}>
         <Sidebar
             title={sidebar.title}
             description={sidebar.description}
             social={sidebar.social}
             style={{
-                display: "flex",
-                float: "right"
+                
               }}
-          />
-        <Link to='/blog' style={{marginTop:'10px', fontWeight:'bold'}}>Back to Blog's Main Page</Link>  
+          /> 
+        <Link to='/blog' style={{marginTop:'30px', fontWeight:'bold'}}>Back to Blog's Main Page</Link> 
         </div>
-        </div>
-        <div>
             <p>
               The stethoscope is a fundamental tool used by healthcare
               professionals for over 200 years. However, in recent times, there

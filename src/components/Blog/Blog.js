@@ -18,10 +18,12 @@ import Header from './Header';
 // import post3 from './blog-post.3.md';
 
 const sections = [
-  { title: 'Technology', url: '#' },
+  { title: 'Technology', url: '/blog/technology' },
+  { title: 'Cardiology', url: '#' },
+  { title: 'Remote Monitoring', url: '#' },
   { title: 'Science', url: '#' },
   { title: 'Health', url: '#' },
-  { title: 'Style', url: '#' },
+  { title: 'Life Style', url: '' }
 ];
 
 const mainFeaturedPost = {
@@ -64,19 +66,6 @@ const sidebar = {
     // { name: 'GitHub', icon: GitHubIcon },
     { name: 'Twitter', icon: TwitterIcon },
     // { name: 'Facebook', icon: FacebookIcon },
-  ],
-  archives: [
-    { title: 'March 2020', url: '#' },
-    { title: 'February 2020', url: '#' },
-    { title: 'January 2020', url: '#' },
-    { title: 'November 1999', url: '#' },
-    { title: 'October 1999', url: '#' },
-    { title: 'September 1999', url: '#' },
-    { title: 'August 1999', url: '#' },
-    { title: 'July 1999', url: '#' },
-    { title: 'June 1999', url: '#' },
-    { title: 'May 1999', url: '#' },
-    { title: 'April 1999', url: '#' },
   ],
 };
 
