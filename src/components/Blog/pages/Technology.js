@@ -1,22 +1,27 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
+import PropTypes from 'prop-types';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
+import { Link } from 'react-router-dom';
+import { TechData } from './PageData';
+import { Paper, Box, Container, Button, Stack } from '@mui/material';
+import Header from '../Header';
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const sections = [
+    { title: 'Technology', url: '/blog/technology' },
+    { title: 'Cardiology', url: '#' },
+    { title: 'Remote Monitoring', url: '#' },
+    { title: 'Science', url: '#' },
+    { title: 'Health', url: '#' },
+    { title: 'Life Style', url: '' }
+  ];
 
-export default function Technology() {
-  return (
-      <main>
-        {/* Hero unit */}
+function Technology() {
+    return (
         <Box
           sx={{
             bgcolor: 'background.paper',
@@ -32,10 +37,10 @@ export default function Technology() {
               color="text.primary"
               gutterBottom
             >
-              Technology Articles
+              Technology Blog
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Enjoy DigiBeat's Articles on new and upcoming technology
+              Explore articles about DigiBeat and other medical technologies.
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -43,44 +48,48 @@ export default function Technology() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Back to main blog</Button>
+              <Button variant="contained" href='/blog'>Back to main blog</Button>
             </Stack>
+            <Header title="Blog" sections={sections} />
           </Container>
-        </Box>
-        <Container sx={{ py: 8 }} maxWidth="md">
-          {/* End hero unit */}
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                >
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      // 16:9
-                      pt: '56.25%',
-                    }}
-                    image="https://source.unsplash.com/random"
-                    alt="random"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" href='/blog/heropost'>View Full Article</Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </main>
-  );
-}
+      <Paper item xs={12} md={6} 
+        style={{
+            display:'flex',
+            flexDirection:'row',
+            margin: '50px',
+            flexWrap:'wrap',
+            justifyContent:'center'
+        }}
+      >
+        {TechData.map((post, index) => {
+            return (
+          <Card sx={{ display: 'flex', margin:'20px', maxWidth:'450px' }}>
+            <CardContent sx={{ flex: 1 }}>
+              <Typography component="h2" variant="h5">
+                {post.title}
+              </Typography>
+              <Typography variant="subtitle1" color="text.secondary">
+                {post.date}
+              </Typography>
+              <Typography variant="subtitle1" paragraph>
+                {post.description}
+              </Typography>
+              <Link to={post.link} variant="subtitle1" color="primary">
+                Continue reading...
+              </Link>
+            </CardContent>
+            <CardMedia
+              component="img"
+              sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
+              image={post.image}
+              alt={post.imageLabel}
+            />
+          </Card>
+           )
+        })}
+      </Paper>
+      </Box>
+    );
+  }
+
+export default Technology;

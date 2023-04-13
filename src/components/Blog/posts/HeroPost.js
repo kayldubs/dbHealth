@@ -6,8 +6,8 @@ import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 import Sidebar from "../Sidebar";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import Grid from '@mui/material/Grid';
-import { textAlign } from "@mui/system";
+import Header from "../Header";
+
 
 const sidebar = {
     title: 'About Our Blog',
@@ -20,10 +20,20 @@ const sidebar = {
     ],
   };
 
+  const sections = [
+    { title: 'Technology', url: '/blog/technology' },
+    { title: 'Cardiology', url: '#' },
+    { title: 'Remote Monitoring', url: '#' },
+    { title: 'Science', url: '#' },
+    { title: 'Health', url: '#' },
+    { title: 'Life Style', url: '' }
+  ];
+
 const HeroPost = () => {
   return (
     <Container>
       <Box style={{ padding: "50px 50px" }}>
+      <Header title="Blog" sections={sections} />
         <Card
           style={{
             diplay: "flex",
