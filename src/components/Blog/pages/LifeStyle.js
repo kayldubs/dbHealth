@@ -7,20 +7,20 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { Link } from 'react-router-dom';
-import { TechData } from './PageData';
+import { LifeData } from './PageData';
 import { Paper, Box, Container, Button, Stack } from '@mui/material';
 import Header from '../Header';
 
 const sections = [
-  { title: "Technology", url: "/blog/technology" },
-  { title: "Cardiology", url: "/blog/cardiology" },
-  { title: "Remote Monitoring", url: "/blog/remotemonitoring" },
-  { title: "Science", url: "/blog/science" },
-  { title: "Health", url: "/blog/health" },
-  { title: "Life Style", url: "/blog/lifestyle" },
-];
+    { title: "Technology", url: "/blog/technology" },
+    { title: "Cardiology", url: "/blog/cardiology" },
+    { title: "Remote Monitoring", url: "/blog/remotemonitoring" },
+    { title: "Science", url: "/blog/science" },
+    { title: "Health", url: "/blog/health" },
+    { title: "Life Style", url: "/blog/lifestyle" },
+  ];
 
-function Technology() {
+function LifeStyle() {
     return (
         <Box
           sx={{
@@ -37,7 +37,7 @@ function Technology() {
               color="text.primary"
               gutterBottom
             >
-              Technology Blog
+              Life Style Blog
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               Explore articles about DigiBeat and other medical technologies.
@@ -61,7 +61,7 @@ function Technology() {
             justifyContent:'center'
         }}
       >
-        {TechData.map((post, index) => {
+        {LifeData.map((post, index) => {
             return (
           <Card sx={{ display: 'flex', margin:'20px', maxWidth:'450px' }}>
             <CardContent sx={{ flex: 1 }}>
@@ -92,4 +92,4 @@ function Technology() {
     );
   }
 
-export default Technology;
+export default LifeStyle;

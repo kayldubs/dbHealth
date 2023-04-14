@@ -21,14 +21,13 @@ const sidebar = {
   };
 
   const sections = [
-    { title: 'Technology', url: '/blog/technology' },
-    { title: 'Cardiology', url: '#' },
-    { title: 'Remote Monitoring', url: '#' },
-    { title: 'Science', url: '#' },
-    { title: 'Health', url: '#' },
-    { title: 'Life Style', url: '' }
+    { title: "Technology", url: "/blog/technology" },
+    { title: "Cardiology", url: "/blog/cardiology" },
+    { title: "Remote Monitoring", url: "/blog/remotemonitoring" },
+    { title: "Science", url: "/blog/science" },
+    { title: "Health", url: "/blog/health" },
+    { title: "Life Style", url: "/blog/lifestyle" },
   ];
-
 const HeroPost = () => {
   return (
     <Container>

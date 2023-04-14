@@ -42,7 +42,7 @@ function Sidebar(props) {
         <Link
           display="block"
           variant="body1"
-          href="https://twitter.com/DigiBeatHealth"
+          href={network.url}
           key={network.name}
           sx={{ mb: 0.5 }}
         >

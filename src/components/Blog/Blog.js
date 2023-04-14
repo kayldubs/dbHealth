@@ -5,6 +5,7 @@ import Container from '@mui/material/Container';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 //import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
@@ -18,12 +19,12 @@ import Header from './Header';
 // import post3 from './blog-post.3.md';
 
 const sections = [
-  { title: 'Technology', url: '/blog/technology' },
-  { title: 'Cardiology', url: '#' },
-  { title: 'Remote Monitoring', url: '#' },
-  { title: 'Science', url: '#' },
-  { title: 'Health', url: '#' },
-  { title: 'Life Style', url: '' }
+  { title: "Technology", url: "/blog/technology" },
+  { title: "Cardiology", url: "/blog/cardiology" },
+  { title: "Remote Monitoring", url: "/blog/remotemonitoring" },
+  { title: "Science", url: "/blog/science" },
+  { title: "Health", url: "/blog/health" },
+  { title: "Life Style", url: "/blog/lifestyle" },
 ];
 
 const mainFeaturedPost = {
@@ -43,6 +44,7 @@ const featuredPosts = [
       "Heart Disease is common amoung American's, with this there is endless information available. Here is what you need to know.",
     image: 'https://source.unsplash.com/random',
     imageLabel: 'Image Text',
+    url:'/blog/feature1'
   },
   {
     title: "Why Cardiologist should integrate DigiBeat's Digital Stethoscope into their practices",
@@ -51,6 +53,7 @@ const featuredPosts = [
       'Explore the technological, patient, and economic benefits of the DigiBeat stethoscope',
     image: 'https://source.unsplash.com/random',
     imageLabel: 'Image Text',
+    url:'/blog/feature2'
   },
 ];
 
@@ -64,8 +67,8 @@ const sidebar = {
     "Here you will find everything you need to know about DigiBeat's portable and wireless technology, how it improve heart disease prevention, benefits of incorporating this device into your caridology practices, and much more general health information.",
   social: [
     // { name: 'GitHub', icon: GitHubIcon },
-    { name: 'Twitter', icon: TwitterIcon },
-    // { name: 'Facebook', icon: FacebookIcon },
+    { name: 'Twitter', icon: TwitterIcon, url:"https://twitter.com/DigiBeatHealth" },
+    { name: 'LinkedIn', icon: LinkedInIcon, url:"https://www.linkedin.com/company/digibeat-health/" },
   ],
 };
 
@@ -82,7 +85,7 @@ export default function Blog() {
           <MainFeaturedPost post={mainFeaturedPost} style={{paddingTop:'50px'}} />
           <Grid container spacing={4}>
             {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
+              <FeaturedPost key={post.title} post={post}/>
             ))}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
@@ -93,6 +96,7 @@ export default function Blog() {
               title={sidebar.title}
               description={sidebar.description}
               social={sidebar.social}
+              url={sidebar.url}
             />
           </Grid>
         </main>

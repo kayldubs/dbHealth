@@ -26,6 +26,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fontsource/expletus-sans"
 import { TextData } from './components/Carousel/TextData';
 import HeroPost from './components/Blog/posts/HeroPost';
+import Cardiology from './components/Blog/pages/Cardiology';
+import RemoteMonitoring from './components/Blog/pages/RemoteMonitoring';
+import Science from './components/Blog/pages/Science';
+import Health from './components/Blog/pages/Health';
+import LifeStyle from './components/Blog/pages/LifeStyle';
 
 
 
@@ -114,6 +119,11 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           </>} /> 
           <Route exact path="/blog/heropost" element={<HeroPost/>} />
           <Route exact path="/blog/technology" element={<Technology/>} />
+          <Route exact path="/blog/cardiology" element={<Cardiology/>} />
+          <Route exact path="/blog/remotemonitoring" element={<RemoteMonitoring/>} />
+          <Route exact path="/blog/science" element={<Science/>} />
+          <Route exact path="/blog/health" element={<Health/>} />
+          <Route exact path="/blog/lifestyle" element={<LifeStyle/>} />
           <Route exact path='/contactForm' element={<Form/>} />
           </Routes>
           <Footer/>
