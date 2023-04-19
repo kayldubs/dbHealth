@@ -1,24 +1,13 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { Container, CardMedia } from "@mui/material";
+import { Container, CardMedia, Paper } from "@mui/material";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
-import Sidebar from "../Sidebar";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Header from "../Header";
-
-
-const sidebar = {
-    title: 'About Our Blog',
-    description:
-      "Here you will find everything you need to know about DigiBeat's portable and wireless technology, how it improve heart disease prevention, benefits of incorporating this device into your caridology practices, and much more general health information.",
-    social: [
-      // { name: 'GitHub', icon: GitHubIcon },
-      { name: 'Twitter', icon: TwitterIcon },
-      // { name: 'Facebook', icon: FacebookIcon },
-    ],
-  };
+import { Button } from "react-bootstrap";
+import { useState } from "react";
 
   const sections = [
     { title: "Technology", url: "/blog/technology" },
@@ -30,6 +19,22 @@ const sidebar = {
     { title: "Back to Blog Home", url: "/blog" }
   ];
 const HeroPost = () => {
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseEnter = () => {
+     setIsHover(true);
+  };
+
+  const handleMouseLeave = () => {
+     setIsHover(false);
+  };
+
+  const btnStyle = {
+   textDecoration: "none",
+   borderRadius: "10px",
+   borderColor: "transparent",
+   backgroundColor: isHover ? "rgb(106,138,175)" : "rgb(39,170,225)"
+ };
   return (
     <Container>
       <Box style={{ padding: "50px 50px" }}>
@@ -85,13 +90,12 @@ const HeroPost = () => {
             <CardMedia
               component="img"
               alt="front facing angle of the digibeat remote stethoscope showcasing the volume control and power button"
-              src="https://mcusercontent.com/f78a01ed120667028e9e65574/images/d309afbc-889e-6b3c-6731-5f5646d29df2.png"
+              src="https://mcusercontent.com/f78a01ed120667028e9e65574/images/36a70dec-ac88-977e-a039-6477deb65ade.jpg"
               style={{
-                width:'200px',
-                height:'200px',
+                width:'700px',
+                height:'450px',
                 display:'flex',
-                float:'right',
-                marginTop:'30px'
+                margin:'auto'
               }}
             />
             <h3 style={{color:'var(--midBlue)'}}>Features and Benefits of the Digibeat Stethoscope</h3>
@@ -144,6 +148,17 @@ const HeroPost = () => {
               This enhanced diagnostic accuracy results in superior patient
               care.
             </p>
+            <Paper elevation={0} sx={{ p: 2, bgcolor: "grey.200", display:'flex',
+          alignContent:'center', flexDirection:'column', mt:3 }}>
+        <Typography variant="h6" gutterBottom style={{textAlign:'center'}}>
+          Interested In Learning More About DigiBeat?
+        </Typography>
+        <Button href="/contactForm"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        style={btnStyle}
+        >Sign Up</Button>
+      </Paper>
             <h3 style={{color:'var(--midBlue)'}}>Conclusion</h3>
             <p>
               The Digibeat Stethoscope is a significant advancement in the field

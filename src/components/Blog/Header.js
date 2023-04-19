@@ -8,6 +8,15 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import { useState } from "react";
 
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  LinkedinIcon
+} from "react-share";
+
 function Header(props) {
   const { sections, title } = props;
 
@@ -26,10 +35,12 @@ function Header(props) {
     color:'#000000',
     borderRadius: "20px",
     borderColor: "transparent",
-    backgroundColor: isHover ? "rgb(106,138,175)" : "rgb(39,170,225)",
+    backgroundColor: "rgb(39,170,225)",
     margin:'10px'
-
   };
+
+const shareUrl = "www.digibeat.health"
+
   return (
     <React.Fragment>
       <Toolbar
@@ -53,14 +64,29 @@ function Header(props) {
       <Toolbar
       component="nav"
       variant="dense"
-      sx={{ justifyContent: 'left', overflowX: 'auto',  }}
+      sx={{ display:'flex', flexDirection:'row', overflowX: 'auto', justifyContent:'space-around' }}
       >
+        <div style={{display:'flex', alignItems:'center'}}>
+        <Typography style={{marginRight:'10px'}}>SOCIALS:</Typography>
         <Button href="https://twitter.com/DigiBeatHealth" style={btnStyle}>
           Twitter
         </Button>
         <Button href="https://www.linkedin.com/company/digibeat-health/" style={btnStyle}>
           LinkedIn
         </Button>
+        </div>
+        <div style={{display:'flex', alignItems:'center'}}>
+        <Typography style={{marginRight:'10px'}}>SHARE:</Typography>
+        <FacebookShareButton url={shareUrl}>
+          <FacebookIcon size={36} round={true}/>
+        </FacebookShareButton>
+        <LinkedinShareButton url={shareUrl}>
+        <LinkedinIcon size={36} round={true}/>
+        </LinkedinShareButton>
+        <TwitterShareButton url={shareUrl}>
+          <TwitterIcon size={36} round={true}/>
+        </TwitterShareButton>
+        </div>
       </Toolbar>
     </React.Fragment>
     
