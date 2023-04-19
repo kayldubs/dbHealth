@@ -13,10 +13,6 @@ import FeaturedPost from './FeaturedPost';
 import Main from './Main';
 import Sidebar from './Sidebar';
 import Header from './Header';
-// import Footer from './Footer';
-//import Post1 from './posts/post1.js';
-// import post2 from './blog-post.2.md';
-// import post3 from './blog-post.3.md';
 
 const sections = [
   { title: "Technology", url: "/blog/technology" },
@@ -38,20 +34,23 @@ const mainFeaturedPost = {
 
 const featuredPosts = [
   {
-    title: "Heart Disease Frequently Asked Questions. Answered by DigiBeat's Dr.Richards",
-    date: 'April 12',
+    title:
+      "Benefits of Integrating Artificial Intelligence into Wireless Stethoscopes",
+    date: "April 8",
     description:
-      "Heart Disease is common amoung American's, with this there is endless information available. Here is what you need to know.",
-    image: 'https://source.unsplash.com/random',
-    imageLabel: 'Image Text',
-    url:'/blog/feature1'
+      "Explore the benefits of Artificial Intelligence and how it will aid the future of medicine.",
+    image:
+      "https://mcusercontent.com/f78a01ed120667028e9e65574/images/9c68735c-2761-0179-8204-191283a7b571.jpeg",
+    imgLabel:
+      "Nodes showing connection between heart and body using artificial intelligence",
+    url: "/blog/aibenefits",
   },
   {
     title: "Why Cardiologist should integrate DigiBeat's Digital Stethoscope into their practices",
     date: 'April 13',
     description:
       'Explore the technological, patient, and economic benefits of the DigiBeat stethoscope',
-    image: 'https://source.unsplash.com/random',
+    image: 'https://mcusercontent.com/f78a01ed120667028e9e65574/images/66bc72a6-e7c4-4221-4b9f-53eb626900f8.png',
     imageLabel: 'Image Text',
     url:'/blog/feature2'
   },

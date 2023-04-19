@@ -35,7 +35,6 @@ function Cardiology() {
               variant="h2"
               align="center"
               color="text.primary"
-              gutterBottom
             >
               Cardiology Blog
             </Typography>
@@ -43,7 +42,7 @@ function Cardiology() {
               Explore articles about DigiBeat and it's benefits for Cardiology.
             </Typography>
             <Stack
-              sx={{ pt: 4 }}
+              sx={{ pt: 1, pb:1 }}
               direction="row"
               spacing={2}
               justifyContent="center"

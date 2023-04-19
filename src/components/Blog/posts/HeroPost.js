@@ -27,6 +27,7 @@ const sidebar = {
     { title: "Science", url: "/blog/science" },
     { title: "Health", url: "/blog/health" },
     { title: "Life Style", url: "/blog/lifestyle" },
+    { title: "Back to Blog Home", url: "/blog" }
   ];
 const HeroPost = () => {
   return (
@@ -48,10 +49,10 @@ const HeroPost = () => {
         }}
         >
         <Typography style={{margin:'auto'}}>
-          <h1 style={{marginBottom:'35px'}}>
+          <h1 style={{marginBottom:'35px', color:'var(--greyBlue)'}}>
             In Depth Analysis and Purpose of DigiBeat's Digital Stethoscope
           </h1>
-          <h2>
+          <h2 style={{color:'var(--midBlue)'}}>
               Revolutionizing Healthcare: The Advanced Features of the Digibeat
               Digital Stethoscope.
             </h2>
@@ -60,15 +61,6 @@ const HeroPost = () => {
         <div>
         <div style={{maxWidth:'400px', display: "flex",
                 float: "right", flexDirection:'column'}}>
-        <Sidebar
-            title={sidebar.title}
-            description={sidebar.description}
-            social={sidebar.social}
-            style={{
-                
-              }}
-          /> 
-        <Link to='/blog' style={{marginTop:'30px', fontWeight:'bold'}}>Back to Blog's Main Page</Link> 
         </div>
             <p>
               The stethoscope is a fundamental tool used by healthcare
@@ -79,7 +71,7 @@ const HeroPost = () => {
               in-home exams while providing new features and capabilities that
               enhance patient care.
             </p>
-            <h3>What is the Digibeat Stethoscope?</h3>
+            <h3 style={{color:'var(--midBlue)'}}>What is the Digibeat Stethoscope?</h3>
             <p>
               The Digibeat Stethoscope is a wireless, digital stethoscope that
               uses cutting-edge technology to record and amplify heart and lung
@@ -102,7 +94,7 @@ const HeroPost = () => {
                 marginTop:'30px'
               }}
             />
-            <h3>Features and Benefits of the Digibeat Stethoscope</h3>
+            <h3 style={{color:'var(--midBlue)'}}>Features and Benefits of the Digibeat Stethoscope</h3>
             <p>
               One of the many significant benefits of the Digibeat Stethoscope
               is its ability to amplify sounds up to 20 times, making it easier
@@ -152,7 +144,7 @@ const HeroPost = () => {
               This enhanced diagnostic accuracy results in superior patient
               care.
             </p>
-            <h3>Conclusion</h3>
+            <h3 style={{color:'var(--midBlue)'}}>Conclusion</h3>
             <p>
               The Digibeat Stethoscope is a significant advancement in the field
               of digital medical devices, offering a range of benefits and

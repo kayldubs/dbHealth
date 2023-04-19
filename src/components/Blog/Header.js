@@ -6,10 +6,30 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import { useState } from "react";
 
 function Header(props) {
   const { sections, title } = props;
 
+  const [isHover, setIsHover] = useState(false);
+
+   const handleMouseEnter = () => {
+      setIsHover(true);
+   };
+
+   const handleMouseLeave = () => {
+      setIsHover(false);
+   };
+
+  const btnStyle = {
+    textDecoration: "none",
+    color:'#000000',
+    borderRadius: "20px",
+    borderColor: "transparent",
+    backgroundColor: isHover ? "rgb(106,138,175)" : "rgb(39,170,225)",
+    margin:'10px'
+
+  };
   return (
     <React.Fragment>
       <Toolbar
@@ -30,7 +50,20 @@ function Header(props) {
           </Link>
         ))}
       </Toolbar>
+      <Toolbar
+      component="nav"
+      variant="dense"
+      sx={{ justifyContent: 'left', overflowX: 'auto',  }}
+      >
+        <Button href="https://twitter.com/DigiBeatHealth" style={btnStyle}>
+          Twitter
+        </Button>
+        <Button href="https://www.linkedin.com/company/digibeat-health/" style={btnStyle}>
+          LinkedIn
+        </Button>
+      </Toolbar>
     </React.Fragment>
+    
   );
 }
 

@@ -31,6 +31,13 @@ import RemoteMonitoring from './components/Blog/pages/RemoteMonitoring';
 import Science from './components/Blog/pages/Science';
 import Health from './components/Blog/pages/Health';
 import LifeStyle from './components/Blog/pages/LifeStyle';
+import AiBenefits from './components/Blog/posts/AiBenefits';
+import Silent from './components/Blog/posts/Silent';
+import Tips5 from './components/Blog/posts/Tips5';
+import Tips10 from './components/Blog/posts/Tips10';
+import WarHeartDisease from './components/Blog/posts/WarHeartDisease';
+import DigiBeatInt from './components/Blog/posts/DigiBeatInt';
+import HowTo from './components/Blog/posts/HowTo';
 
 
 
@@ -124,6 +131,13 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           <Route exact path="/blog/science" element={<Science/>} />
           <Route exact path="/blog/health" element={<Health/>} />
           <Route exact path="/blog/lifestyle" element={<LifeStyle/>} />
+          <Route exact path="/blog/aibenefits" element={<AiBenefits/>} />
+          <Route exact path="/blog/silentheartattacks" element={<Silent/>} />
+          <Route exact path="/blog/healthyeating" element={<Tips5/>} />
+          <Route exact path="/blog/10tips" element={<Tips10/>} />
+          <Route exact path="/blog/quickglimpse" element={<WarHeartDisease/>} />
+          <Route exact path="/blog/feature2" element={<DigiBeatInt/>} />
+          <Route exact path="/blog/athomeuse" element={<HowTo/>} />
           <Route exact path='/contactForm' element={<Form/>} />
           </Routes>
           <Footer/>

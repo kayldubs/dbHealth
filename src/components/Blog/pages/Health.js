@@ -35,15 +35,14 @@ function Health() {
               variant="h2"
               align="center"
               color="text.primary"
-              gutterBottom
             >
               Health Blog
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Explore articles about DigiBeat and other medical technologies.
+              Explore articles about DigiBeat and other health topics.
             </Typography>
             <Stack
-              sx={{ pt: 4 }}
+              sx={{ pt: 1, pb:1 }}
               direction="row"
               spacing={2}
               justifyContent="center"

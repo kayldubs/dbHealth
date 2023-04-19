@@ -35,20 +35,19 @@ function Technology() {
               variant="h2"
               align="center"
               color="text.primary"
-              gutterBottom
             >
               Technology Blog
             </Typography>
-            <Typography variant="h5" align="center" color="text.secondary" paragraph>
+            <Typography variant="h5" align="center" color="text.secondary" paragraph style={{marginTop:'16px'}}>
               Explore articles about DigiBeat and other medical technologies.
             </Typography>
             <Stack
-              sx={{ pt: 4 }}
+              sx={{ pt: 1, pb: 1 }}
               direction="row"
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained" href='/blog'>Back to main blog</Button>
+              <Button variant="contained" href='/blog' style={{marginTop:'0px'}}>Back to main blog</Button>
             </Stack>
             <Header title="Blog" sections={sections} />
           </Container>

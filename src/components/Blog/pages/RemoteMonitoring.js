@@ -35,15 +35,14 @@ function RemoteMonitoring() {
               variant="h2"
               align="center"
               color="text.primary"
-              gutterBottom
             >
               Remote Monitoring Blog
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Explore articles about DigiBeat and other medical technologies.
+              Explore articles about DigiBeat and remote monitoring benefits.
             </Typography>
             <Stack
-              sx={{ pt: 4 }}
+              sx={{ pt: 1, pb: 1 }}
               direction="row"
               spacing={2}
               justifyContent="center"

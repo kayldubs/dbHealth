@@ -42,7 +42,7 @@ export const TechData = [
         description:"Learn the technological, patient, and economic benefits of the DigiBeat stethoscope.",
         image:"https://mcusercontent.com/f78a01ed120667028e9e65574/images/66bc72a6-e7c4-4221-4b9f-53eb626900f8.png",
         imgLabel:"Shows DigiBeat's wireless digital stethoscope next to ipad interface",
-        link:"/blog/whycardiologist"
+        link:"/blog/feature2"
     },
     {
         id: 6,
@@ -99,7 +99,7 @@ export const CardiologyData = [
         description:"Learn the technological, patient, and economic benefits of the DigiBeat stethoscope.",
         image:"https://mcusercontent.com/f78a01ed120667028e9e65574/images/66bc72a6-e7c4-4221-4b9f-53eb626900f8.png",
         imgLabel:"Shows DigiBeat's wireless digital stethoscope next to ipad interface",
-        link:"/blog/whycardiologist"
+        link:"/blog/feature2"
     },
 ]
 
@@ -168,7 +168,7 @@ export const ScienceData = [
         description:"Learn the technological, patient, and economic benefits of the DigiBeat stethoscope.",
         image:"https://mcusercontent.com/f78a01ed120667028e9e65574/images/66bc72a6-e7c4-4221-4b9f-53eb626900f8.png",
         imgLabel:"Shows DigiBeat's wireless digital stethoscope next to ipad interface",
-        link:"/blog/whycardiologist"
+        link:"/blog/feature2"
     },
     {
         id: 5,
@@ -207,7 +207,7 @@ export const HealthData = [
         description:"Learn the technological, patient, and economic benefits of the DigiBeat stethoscope.",
         image:"https://mcusercontent.com/f78a01ed120667028e9e65574/images/66bc72a6-e7c4-4221-4b9f-53eb626900f8.png",
         imgLabel:"Shows DigiBeat's wireless digital stethoscope next to ipad interface",
-        link:"/blog/whycardiologist"
+        link:"/blog/feature2"
     },
     {
         id: 3,
