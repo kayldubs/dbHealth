@@ -100,7 +100,8 @@ const DigiBeatInt = () => {
               style={{
                 display:'flex',
                 margin:'auto',
-                imageSize:'contain'
+                imageSize:'contain',
+                padding:'10px'
               }}
             />
             <h3 style={headerStyle}>2. Remote Patient Monitoring</h3>

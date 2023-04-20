@@ -8,7 +8,6 @@ import Header from "../Header";
 import { Button } from "react-bootstrap";
 import { useState } from "react";
 
-
 const sections = [
   { title: "Technology", url: "/blog/technology" },
   { title: "Cardiology", url: "/blog/cardiology" },
@@ -16,17 +15,17 @@ const sections = [
   { title: "Science", url: "/blog/science" },
   { title: "Health", url: "/blog/health" },
   { title: "Life Style", url: "/blog/lifestyle" },
-  { title: "Back to Blog Home", url: "/blog" }
+  { title: "Back to Blog Home", url: "/blog" },
 ];
 
 const headerStyle = {
-  color:'var(--midBlue)'
-}
+  color: "var(--midBlue)",
+};
 
 const h1 = {
-  marginBottom:'35px', 
-  color:'var(--greyBlue)'
-}
+  marginBottom: "35px",
+  color: "var(--greyBlue)",
+};
 
 const HowTo = () => {
   const [isHover, setIsHover] = useState(false);
@@ -65,10 +64,12 @@ const HowTo = () => {
           >
             <Typography style={{ margin: "auto" }}>
               <h1 style={h1}>
-              1…2…3 and DONE it's that easy to use your DigiBeat Digital Stethoscope - Ara at home.
+                1…2…3 and DONE it's that easy to use your DigiBeat Digital
+                Stethoscope - Ara at home.
               </h1>
               <h2 style={headerStyle}>
-              Step by step guide on how to use DigiBeat to improve your heart health
+                Step by step guide on how to use DigiBeat to improve your heart
+                health
               </h2>
             </Typography>
           </div>
@@ -102,6 +103,7 @@ const HowTo = () => {
                 display: "flex",
                 float: "right",
                 marginTop: "auto",
+                padding: "10px",
               }}
             />
             <h3 style={headerStyle}>2. Remote Patient Monitoring</h3>

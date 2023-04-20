@@ -103,6 +103,7 @@ const HeroPost = () => {
                   imageSize:'contain',
                   display: "flex",
                   margin: "auto",
+                  padding:'10px'
                 }}
               />
               <h3 style={{ color: "var(--midBlue)" }}>

@@ -1,23 +1,12 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { Container, CardMedia } from "@mui/material";
+import { Container, CardMedia, Paper, CardActionArea } from "@mui/material";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
-import Sidebar from "../Sidebar";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import Header from "../Header";
-
-const sidebar = {
-  title: "About Our Blog",
-  description:
-    "Here you will find everything you need to know about DigiBeat's portable and wireless technology, how it improve heart disease prevention, benefits of incorporating this device into your caridology practices, and much more general health information.",
-  social: [
-    // { name: 'GitHub', icon: GitHubIcon },
-    { name: "Twitter", icon: TwitterIcon },
-    // { name: 'Facebook', icon: FacebookIcon },
-  ],
-};
+import { Button } from "react-bootstrap";
+import { useState } from "react";
 
 const sections = [
   { title: "Technology", url: "/blog/technology" },
@@ -26,8 +15,35 @@ const sections = [
   { title: "Science", url: "/blog/science" },
   { title: "Health", url: "/blog/health" },
   { title: "Life Style", url: "/blog/lifestyle" },
+  { title: "Back to Blog Home", url: "/blog" },
 ];
+
+const headerStyle = {
+  color:'var(--midBlue)'
+}
+
+const h1 = {
+  marginBottom:'35px', 
+  color:'var(--greyBlue)',
+  textAlign:'center'
+}
 const WarHeartDisease = () => {
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHover(false);
+  };
+
+  const btnStyle = {
+    textDecoration: "none",
+    borderRadius: "10px",
+    borderColor: "transparent",
+    backgroundColor: isHover ? "rgb(106,138,175)" : "rgb(39,170,225)",
+  };
   return (
     <Container>
       <Box style={{ padding: "50px 50px" }}>
@@ -47,37 +63,16 @@ const WarHeartDisease = () => {
             }}
           >
             <Typography style={{ margin: "auto" }}>
-              <h1 style={{ marginBottom: "35px" }}>
+              <h1 style={h1}>
                 A Quick Glimpse into America's War Against Heart Disease
               </h1>
-              <h2>
+              <h2 style={headerStyle}>
                 Find out the relevance and your possible risk factors for heart
                 disease in America.
               </h2>
             </Typography>
           </div>
           <div>
-            <div
-              style={{
-                maxWidth: "400px",
-                display: "flex",
-                float: "right",
-                flexDirection: "column",
-              }}
-            >
-              <Sidebar
-                title={sidebar.title}
-                description={sidebar.description}
-                social={sidebar.social}
-                style={{}}
-              />
-              <Link
-                to="/blog"
-                style={{ marginTop: "30px", fontWeight: "bold" }}
-              >
-                Back to Blog's Main Page
-              </Link>
-            </div>
             <p>
               Heart disease is a major health concern in America, affecting
               millions of individuals every year. In fact, heart disease is the
@@ -97,13 +92,12 @@ const WarHeartDisease = () => {
             <CardMedia
               component="img"
               alt="front facing angle of the digibeat remote stethoscope showcasing the volume control and power button"
-              src="https://mcusercontent.com/f78a01ed120667028e9e65574/images/d309afbc-889e-6b3c-6731-5f5646d29df2.png"
+              src="https://mcusercontent.com/f78a01ed120667028e9e65574/images/d25d1eea-de49-8ef3-3d33-1529d5af1fba.jpg"
               style={{
-                width: "200px",
-                height: "200px",
-                display: "flex",
-                float: "right",
-                marginTop: "30px",
+                display:'flex',
+                margin:'auto',
+                imageSize:'contain',
+                padding:'10px'
               }}
             />
             <p>
@@ -136,6 +130,33 @@ const WarHeartDisease = () => {
               stages. Additionally, monitoring blood pressure and cholesterol
               levels at home can help individuals to better manage their health.
             </p>
+            <Paper
+              elevation={0}
+              sx={{
+                p: 2,
+                bgcolor: "grey.200",
+                display: "flex",
+                alignContent: "center",
+                flexDirection: "column",
+                m: 3,
+              }}
+            >
+              <Typography
+                variant="h6"
+                gutterBottom
+                style={{ textAlign: "center" }}
+              >
+                Interested In Learning More About DigiBeat?
+              </Typography>
+              <Button
+                href="/contactForm"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={btnStyle}
+              >
+                Sign Up
+              </Button>
+            </Paper>
             <p>
               In conclusion, heart disease is a significant health concern in
               America, affecting millions of individuals every year.

@@ -1,23 +1,12 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { Container, CardMedia } from "@mui/material";
+import { Container, CardMedia, Paper, CardActionArea } from "@mui/material";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
-import Sidebar from "../Sidebar";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import Header from "../Header";
-
-const sidebar = {
-  title: "About Our Blog",
-  description:
-    "Here you will find everything you need to know about DigiBeat's portable and wireless technology, how it improve heart disease prevention, benefits of incorporating this device into your caridology practices, and much more general health information.",
-  social: [
-    // { name: 'GitHub', icon: GitHubIcon },
-    { name: "Twitter", icon: TwitterIcon },
-    // { name: 'Facebook', icon: FacebookIcon },
-  ],
-};
+import { Button } from "react-bootstrap";
+import { useState } from "react";
 
 const sections = [
   { title: "Technology", url: "/blog/technology" },
@@ -26,8 +15,34 @@ const sections = [
   { title: "Science", url: "/blog/science" },
   { title: "Health", url: "/blog/health" },
   { title: "Life Style", url: "/blog/lifestyle" },
+  { title: "Back to Blog Home", url: "/blog" },
 ];
+
+const headerStyle = {
+  color: "var(--midBlue)",
+};
+
+const h1 = {
+  marginBottom: "35px",
+  color: "var(--greyBlue)",
+};
 const Tips5 = () => {
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHover(false);
+  };
+
+  const btnStyle = {
+    textDecoration: "none",
+    borderRadius: "10px",
+    borderColor: "transparent",
+    backgroundColor: isHover ? "rgb(106,138,175)" : "rgb(39,170,225)",
+  };
   return (
     <Container>
       <Box style={{ padding: "50px 50px" }}>
@@ -46,41 +61,21 @@ const Tips5 = () => {
               marginBottom: "20px",
             }}
           >
-            <Typography style={{ margin: "auto", textAlign:'center' }}>
-              <h1>
-              5 Tips for Eating a Heart Healthy Diet
-              </h1>
-              <h2>
-              Dietary recommendations for your heart and lung health.
+            <Typography style={{ margin: "auto", textAlign: "center" }}>
+              <h1 style={h1}>5 Tips for Eating a Heart Healthy Diet</h1>
+              <h2 style={headerStyle}>
+                Dietary recommendations for your heart and lung health.
               </h2>
             </Typography>
           </div>
           <div>
-            <div
-              style={{
-                maxWidth: "400px",
-                display: "flex",
-                float: "right",
-                flexDirection: "column",
-              }}
-            >
-              <Sidebar
-                title={sidebar.title}
-                description={sidebar.description}
-                social={sidebar.social}
-                style={{}}
-              />
-              <Link
-                to="/blog"
-                style={{ marginTop: "30px", fontWeight: "bold" }}
-              >
-                Back to Blog's Main Page
-              </Link>
-            </div>
             <p>
-            Eating a heart-healthy diet is essential for maintaining good cardiovascular health. The right nutrition can help reduce the risk of heart disease and stroke. Here are five tips for eating a heart-healthy diet:
+              Eating a heart-healthy diet is essential for maintaining good
+              cardiovascular health. The right nutrition can help reduce the
+              risk of heart disease and stroke. Here are five tips for eating a
+              heart-healthy diet:
             </p>
-            <h3>1. Focus on Whole Foods</h3>
+            <h3 style={headerStyle}>1. Focus on Whole Foods</h3>
             <p>
               With the help of AI, wireless stethoscopes can provide more
               accurate diagnoses by analyzing heart and lung sounds in
@@ -93,16 +88,15 @@ const Tips5 = () => {
             <CardMedia
               component="img"
               alt="front facing angle of the digibeat remote stethoscope showcasing the volume control and power button"
-              src="https://mcusercontent.com/f78a01ed120667028e9e65574/images/d309afbc-889e-6b3c-6731-5f5646d29df2.png"
+              src="https://mcusercontent.com/f78a01ed120667028e9e65574/images/d8c04720-33cb-e500-96d9-ecfad84754b3.jpeg"
               style={{
-                width: "200px",
-                height: "200px",
                 display: "flex",
-                float: "right",
-                marginTop: "30px",
+                margin: "auto",
+                imageSize: "contain",
+                padding: "10px",
               }}
             />
-            <h3>2. Remote Patient Monitoring</h3>
+            <h3 style={headerStyle}>2. Remote Patient Monitoring</h3>
             <p>
               With the ability to wirelessly transmit data, AI-integrated
               wireless stethoscopes can be used for remote patient monitoring.
@@ -112,7 +106,7 @@ const Tips5 = () => {
               is especially useful for patients who live in remote areas or have
               limited mobility.
             </p>
-            <h3>3. Better Patient Experience</h3>
+            <h3 style={headerStyle}>3. Better Patient Experience</h3>
             <p>
               Traditional stethoscopes can be uncomfortable for patients,
               especially those with chest hair or sensitive skin. Wireless
@@ -121,7 +115,34 @@ const Tips5 = () => {
               Patients no longer need to visit the doctor's office for a basic
               check-up, and this can help reduce the overall cost of healthcare.
             </p>
-            <h3>4. Advanced Analytics</h3>
+            <Paper
+              elevation={0}
+              sx={{
+                p: 2,
+                bgcolor: "grey.200",
+                display: "flex",
+                alignContent: "center",
+                flexDirection: "column",
+                m: 3,
+              }}
+            >
+              <Typography
+                variant="h6"
+                gutterBottom
+                style={{ textAlign: "center" }}
+              >
+                Interested In Learning More About DigiBeat?
+              </Typography>
+              <Button
+                href="/contactForm"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={btnStyle}
+              >
+                Sign Up
+              </Button>
+            </Paper>
+            <h3 style={headerStyle}>4. Advanced Analytics</h3>
             <p>
               AI-integrated wireless stethoscopes can analyze a large amount of
               data from multiple patients, allowing doctors to identify patterns
@@ -129,7 +150,7 @@ const Tips5 = () => {
               early detection of health conditions and allow for more targeted
               treatment plans.
             </p>
-            <h3>5. Time-Saving</h3>
+            <h3 style={headerStyle}>5. Time-Saving</h3>
             <p>
               The AI-integration in wireless stethoscopes can also save time for
               doctors by eliminating the need for them to listen to every heart

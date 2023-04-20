@@ -97,7 +97,8 @@ const Silent = () => {
               style={{
                 display:'flex',
                 margin:'auto',
-                imageSize:'contain'
+                imageSize:'contain',
+                padding:'10px'
               }}
             />
             <h3 style={headerStyle}>How Digital Stethoscopes Help</h3>
