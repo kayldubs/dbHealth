@@ -1,22 +1,15 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { Container, CardMedia } from "@mui/material";
+import { Container, CardMedia, Paper } from "@mui/material";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
-import Sidebar from "../Sidebar";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import Header from "../Header";
+import { useState } from "react";
+import { Button } from "react-bootstrap";
 
-const sidebar = {
-  title: "About Our Blog",
-  description:
-    "Here you will find everything you need to know about DigiBeat's portable and wireless technology, how it improve heart disease prevention, benefits of incorporating this device into your caridology practices, and much more general health information.",
-  social: [
-    // { name: 'GitHub', icon: GitHubIcon },
-    { name: "Twitter", icon: TwitterIcon },
-    // { name: 'Facebook', icon: FacebookIcon },
-  ],
+const headerStyle = {
+  color: "var(--midBlue)",
 };
 
 const sections = [
@@ -26,8 +19,25 @@ const sections = [
   { title: "Science", url: "/blog/science" },
   { title: "Health", url: "/blog/health" },
   { title: "Life Style", url: "/blog/lifestyle" },
+  { title: "Back to Blog Home", url: "/blog" },
 ];
 const AiBenefits = () => {
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHover(false);
+  };
+
+  const btnStyle = {
+    textDecoration: "none",
+    borderRadius: "10px",
+    borderColor: "transparent",
+    backgroundColor: isHover ? "rgb(106,138,175)" : "rgb(39,170,225)",
+  };
   return (
     <Container>
       <Box style={{ padding: "50px 50px" }}>
@@ -47,38 +57,17 @@ const AiBenefits = () => {
             }}
           >
             <Typography style={{ margin: "auto" }}>
-              <h1>
+              <h1 style={{ marginBottom: "35px", color: "var(--greyBlue)" }}>
                 Benefits of Integrating Artificial Intelligence into Wireless
                 Stethoscopes
               </h1>
-              <h2>
+              <h2 style={headerStyle}>
                 Explore the benefits of Artificial Intelligence and how it will
                 aid the future of medicine.
               </h2>
             </Typography>
           </div>
           <div>
-            <div
-              style={{
-                maxWidth: "400px",
-                display: "flex",
-                float: "right",
-                flexDirection: "column",
-              }}
-            >
-              <Sidebar
-                title={sidebar.title}
-                description={sidebar.description}
-                social={sidebar.social}
-                style={{}}
-              />
-              <Link
-                to="/blog"
-                style={{ marginTop: "30px", fontWeight: "bold" }}
-              >
-                Back to Blog's Main Page
-              </Link>
-            </div>
             <p>
               Wireless stethoscopes have been around for quite some time now,
               revolutionizing the way doctors listen to heart and lung sounds.
@@ -88,7 +77,7 @@ const AiBenefits = () => {
               post, we'll explore the advantages of AI-integrated wireless
               stethoscopes.
             </p>
-            <h3>1. Improved Accuracy of Diagnoses</h3>
+            <h3 style={headerStyle}>1. Improved Accuracy of Diagnoses</h3>
             <p>
               With the help of AI, wireless stethoscopes can provide more
               accurate diagnoses by analyzing heart and lung sounds in
@@ -101,16 +90,14 @@ const AiBenefits = () => {
             <CardMedia
               component="img"
               alt="front facing angle of the digibeat remote stethoscope showcasing the volume control and power button"
-              src="https://mcusercontent.com/f78a01ed120667028e9e65574/images/d309afbc-889e-6b3c-6731-5f5646d29df2.png"
+              src="https://mcusercontent.com/f78a01ed120667028e9e65574/images/31884a8d-1814-af2f-9d35-fb3d3d5fbbcf.jpeg"
               style={{
-                width: "200px",
-                height: "200px",
-                display: "flex",
-                float: "right",
-                marginTop: "30px",
+                display:'flex',
+                margin:'auto',
+                imageSize:'contain'
               }}
             />
-            <h3>2. Remote Patient Monitoring</h3>
+            <h3 style={headerStyle}>2. Remote Patient Monitoring</h3>
             <p>
               With the ability to wirelessly transmit data, AI-integrated
               wireless stethoscopes can be used for remote patient monitoring.
@@ -120,7 +107,7 @@ const AiBenefits = () => {
               is especially useful for patients who live in remote areas or have
               limited mobility.
             </p>
-            <h3>3. Better Patient Experience</h3>
+            <h3 style={headerStyle}>3. Better Patient Experience</h3>
             <p>
               Traditional stethoscopes can be uncomfortable for patients,
               especially those with chest hair or sensitive skin. Wireless
@@ -129,7 +116,34 @@ const AiBenefits = () => {
               Patients no longer need to visit the doctor's office for a basic
               check-up, and this can help reduce the overall cost of healthcare.
             </p>
-            <h3>4. Advanced Analytics</h3>
+            <Paper
+              elevation={0}
+              sx={{
+                p: 2,
+                bgcolor: "grey.200",
+                display: "flex",
+                alignContent: "center",
+                flexDirection: "column",
+                m: 3,
+              }}
+            >
+              <Typography
+                variant="h6"
+                gutterBottom
+                style={{ textAlign: "center" }}
+              >
+                Interested In Learning More About DigiBeat?
+              </Typography>
+              <Button
+                href="/contactForm"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={btnStyle}
+              >
+                Sign Up
+              </Button>
+            </Paper>
+            <h3 style={headerStyle}>4. Advanced Analytics</h3>
             <p>
               AI-integrated wireless stethoscopes can analyze a large amount of
               data from multiple patients, allowing doctors to identify patterns
@@ -137,7 +151,7 @@ const AiBenefits = () => {
               early detection of health conditions and allow for more targeted
               treatment plans.
             </p>
-            <h3>5. Time-Saving</h3>
+            <h3 style={headerStyle}>5. Time-Saving</h3>
             <p>
               The AI-integration in wireless stethoscopes can also save time for
               doctors by eliminating the need for them to listen to every heart

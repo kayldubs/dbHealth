@@ -13,11 +13,11 @@ import Header from '../Header';
 
 const sections = [
     { title: "Technology", url: "/blog/technology" },
-    { title: "Cardiology", url: "/blog/cardiology" },
     { title: "Remote Monitoring", url: "/blog/remotemonitoring" },
     { title: "Science", url: "/blog/science" },
     { title: "Health", url: "/blog/health" },
     { title: "Life Style", url: "/blog/lifestyle" },
+    { title: "Back to Blog Home", url: "/blog" }
   ];
 
 function Cardiology() {

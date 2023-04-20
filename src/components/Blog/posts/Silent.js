@@ -1,23 +1,12 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { Container, CardMedia } from "@mui/material";
+import { Container, CardMedia, Paper, CardActionArea } from "@mui/material";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
-import Sidebar from "../Sidebar";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import Header from "../Header";
-
-const sidebar = {
-  title: "About Our Blog",
-  description:
-    "Here you will find everything you need to know about DigiBeat's portable and wireless technology, how it improve heart disease prevention, benefits of incorporating this device into your caridology practices, and much more general health information.",
-  social: [
-    // { name: 'GitHub', icon: GitHubIcon },
-    { name: "Twitter", icon: TwitterIcon },
-    // { name: 'Facebook', icon: FacebookIcon },
-  ],
-};
+import { Button } from "react-bootstrap";
+import { useState } from "react";
 
 const sections = [
   { title: "Technology", url: "/blog/technology" },
@@ -26,8 +15,35 @@ const sections = [
   { title: "Science", url: "/blog/science" },
   { title: "Health", url: "/blog/health" },
   { title: "Life Style", url: "/blog/lifestyle" },
+  { title: "Back to Blog Home", url: "/blog" },
 ];
+
+const headerStyle = {
+  color:'var(--midBlue)'
+}
+
+const h1 = {
+  marginBottom:'35px', 
+  color:'var(--greyBlue)'
+}
+
 const Silent = () => {
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHover(false);
+  };
+
+  const btnStyle = {
+    textDecoration: "none",
+    borderRadius: "10px",
+    borderColor: "transparent",
+    backgroundColor: isHover ? "rgb(106,138,175)" : "rgb(39,170,225)",
+  };
   return (
     <Container>
       <Box style={{ padding: "50px 50px" }}>
@@ -47,35 +63,14 @@ const Silent = () => {
             }}
           >
             <Typography style={{ margin: "auto", textAlign:'center' }}>
-              <h1 style={{ marginBottom: "35px" }}>Silent Heart Attacks</h1>
-              <h2>
+              <h1 style={h1}>Silent Heart Attacks</h1>
+              <h2 style={headerStyle}>
                 What is a silent heart attack and how would a digital
                 stethoscope help?
               </h2>
             </Typography>
           </div>
           <div>
-            <div
-              style={{
-                maxWidth: "400px",
-                display: "flex",
-                float: "right",
-                flexDirection: "column",
-              }}
-            >
-              <Sidebar
-                title={sidebar.title}
-                description={sidebar.description}
-                social={sidebar.social}
-                style={{}}
-              />
-              <Link
-                to="/blog"
-                style={{ marginTop: "30px", fontWeight: "bold" }}
-              >
-                Back to Blog's Main Page
-              </Link>
-            </div>
             <p>
               Silent heart attacks, also known as silent myocardial infarctions
               (SMIs), are becoming increasingly common. According to a study
@@ -86,7 +81,7 @@ const Silent = () => {
               pain. Digital stethoscopes can play a critical role in identifying
               these silent heart attacks and preventing future cardiac events.
             </p>
-            <h3>Symptoms of Silent Heart Attacks</h3>
+            <h3 style={headerStyle}>Symptoms of Silent Heart Attacks</h3>
             <p>
               Silent heart attacks may not cause the classic symptoms associated
               with a heart attack, such as chest pain or discomfort. Instead,
@@ -98,16 +93,14 @@ const Silent = () => {
             <CardMedia
               component="img"
               alt="front facing angle of the digibeat remote stethoscope showcasing the volume control and power button"
-              src="https://mcusercontent.com/f78a01ed120667028e9e65574/images/d309afbc-889e-6b3c-6731-5f5646d29df2.png"
+              src="https://mcusercontent.com/f78a01ed120667028e9e65574/images/0e2a513c-cc94-1a59-d88d-42892c6c3a87.jpeg"
               style={{
-                width: "200px",
-                height: "200px",
-                display: "flex",
-                float: "right",
-                marginTop: "30px",
+                display:'flex',
+                margin:'auto',
+                imageSize:'contain'
               }}
             />
-            <h3>How Digital Stethoscopes Help</h3>
+            <h3 style={headerStyle}>How Digital Stethoscopes Help</h3>
             <p>
               Digital stethoscopes can play a crucial role in detecting silent
               heart attacks by identifying abnormal heart sounds. During a heart
@@ -126,6 +119,33 @@ const Silent = () => {
               early, healthcare providers can take steps to prevent future
               cardiac events and improve patient outcomes.
             </p>
+            <Paper
+              elevation={0}
+              sx={{
+                p: 2,
+                bgcolor: "grey.200",
+                display: "flex",
+                alignContent: "center",
+                flexDirection: "column",
+                m: 3,
+              }}
+            >
+              <Typography
+                variant="h6"
+                gutterBottom
+                style={{ textAlign: "center" }}
+              >
+                Interested In Learning More About DigiBeat?
+              </Typography>
+              <Button
+                href="/contactForm"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={btnStyle}
+              >
+                Sign Up
+              </Button>
+            </Paper>
             <p>
               Digital stethoscopes can also be used by patients to monitor their
               own heart sounds at home. This can be particularly useful for

@@ -72,6 +72,17 @@ function Footer() {
       </div> */}
       <div className='section2'>
       <Typography fontWeight='bold'>
+            Follow Us
+        </Typography>
+        <Link color="inherit" href="https://twitter.com/DigiBeatHealth">
+        Twitter
+      </Link>
+      <Link color="inherit" href="https://www.linkedin.com/company/digibeat-health/">
+        LinkedIn
+      </Link>
+      </div>
+      <div className='section2'>
+      <Typography fontWeight='bold'>
             Regulatory
         </Typography>
         <Link color="inherit" href="/regulatory">

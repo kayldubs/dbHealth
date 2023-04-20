@@ -5,6 +5,15 @@ import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 
+const headerStyle = {
+  color:'var(--midBlue)',
+}
+
+const h1 = {
+  marginBottom:'35px', 
+  color:'var(--greyBlue)',
+  textAlign: 'center'
+}
 
 const Post1 = () => {
   return (
@@ -25,10 +34,10 @@ const Post1 = () => {
             }}
           >
             <Typography>
-              <h1 style={{ marginBottom: "55px", textAlign: "center" }}>
+              <h1 style={h1}>
                 In Depth Analysis and Purpose of DigiBeat's Digital Stethoscope
               </h1>
-              <h2>
+              <h2 style={headerStyle}>
                 Revolutionizing Healthcare: The Advanced Features of the
                 DigiBeat Digital Stethoscope.
               </h2>
@@ -44,7 +53,7 @@ const Post1 = () => {
               in-home exams while providing new features and capabilities that
               enhance patient care.
             </p>
-            <h3>What is the Digibeat Stethoscope?</h3>
+            <h3 style={headerStyle}>What is the Digibeat Stethoscope?</h3>
             <p>
               The Digibeat Stethoscope is a wireless, digital stethoscope that
               uses cutting-edge technology to record and amplify heart and lung
@@ -67,7 +76,7 @@ const Post1 = () => {
                 marginTop:'30px'
               }}
             />
-            <h3>Features and Benefits of the Digibeat Stethoscope</h3>
+            <h3 style={headerStyle}>Features and Benefits of the Digibeat Stethoscope</h3>
             <p>
               One of the many significant benefits of the Digibeat Stethoscope
               is its ability to amplify sounds up to 20 times, making it easier
@@ -117,7 +126,7 @@ const Post1 = () => {
               This enhanced diagnostic accuracy results in superior patient
               care.
             </p>
-            <h3>Conclusion</h3>
+            <h3 style={headerStyle}>Conclusion</h3>
             <p>
               The Digibeat Stethoscope is a significant advancement in the field
               of digital medical devices, offering a range of benefits and

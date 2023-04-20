@@ -20,16 +20,6 @@ import {
 function Header(props) {
   const { sections, title } = props;
 
-  const [isHover, setIsHover] = useState(false);
-
-   const handleMouseEnter = () => {
-      setIsHover(true);
-   };
-
-   const handleMouseLeave = () => {
-      setIsHover(false);
-   };
-
   const btnStyle = {
     textDecoration: "none",
     color:'#000000',
@@ -39,7 +29,16 @@ function Header(props) {
     margin:'10px'
   };
 
-const shareUrl = "www.digibeat.health"
+  const btnStyle2 = {
+    textDecoration: "none",
+    textColor:'#000000',
+    border:'1px solid',
+    borderRadius: "20px",
+    borderColor: "#27aae1",
+    margin:'10px'
+  };
+
+const shareUrl = window.location;
 
   return (
     <React.Fragment>
@@ -64,17 +63,17 @@ const shareUrl = "www.digibeat.health"
       <Toolbar
       component="nav"
       variant="dense"
-      sx={{ display:'flex', flexDirection:'row', overflowX: 'auto', justifyContent:'space-around' }}
+      sx={{ display:'flex', flexDirection:'row', overflowX: 'auto', justifyContent:'right' }}
       >
-        <div style={{display:'flex', alignItems:'center'}}>
-        <Typography style={{marginRight:'10px'}}>SOCIALS:</Typography>
+        {/* <div style={{display:'flex', alignItems:'center'}}>
+        <Typography style={{marginRight:'10px'}}>FOLLOW US:</Typography>
         <Button href="https://twitter.com/DigiBeatHealth" style={btnStyle}>
           Twitter
         </Button>
-        <Button href="https://www.linkedin.com/company/digibeat-health/" style={btnStyle}>
+        <Button href="https://www.linkedin.com/company/digibeat-health/" style={btnStyle2}>
           LinkedIn
         </Button>
-        </div>
+        </div> */}
         <div style={{display:'flex', alignItems:'center'}}>
         <Typography style={{marginRight:'10px'}}>SHARE:</Typography>
         <FacebookShareButton url={shareUrl}>
