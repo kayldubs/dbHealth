@@ -24,7 +24,7 @@ const sections = [
 ];
 
 const mainFeaturedPost = {
-  title: "In Depth Analysis and Purpose of DigiBeat's Digital Stethoscope",
+  title: "A Brief Overview of DigiBeat's Digital Stethoscope",
   description:
     "This article will expolore the reasons and features that make our digital stethoscope the best choice for the future of medicine",
   image: 'https://mcusercontent.com/f78a01ed120667028e9e65574/images/a6a2b96f-6aba-25b3-534a-6a0946c3f6cf.jpg',
@@ -46,13 +46,13 @@ const featuredPosts = [
     url: "/blog/aibenefits",
   },
   {
-    title: "Why Cardiologist should integrate DigiBeat's Digital Stethoscope into their practices",
+    title: "1…2…3 and DONE it's that easy to use your DigiBeat Digital Stethoscope - Ara at home.",
     date: 'April 13',
     description:
-      'Explore the technological, patient, and economic benefits of the DigiBeat stethoscope',
+      'Step by step guide on how to use DigiBeat to improve your heart health',
     image: 'https://mcusercontent.com/f78a01ed120667028e9e65574/images/66bc72a6-e7c4-4221-4b9f-53eb626900f8.png',
     imageLabel: 'Image Text',
-    url:'/blog/feature2'
+    url:'/blog/athomeuse'
   },
 ];
 

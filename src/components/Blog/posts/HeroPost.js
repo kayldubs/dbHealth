@@ -55,7 +55,7 @@ const HeroPost = () => {
             >
               <Typography style={{ margin: "auto" }}>
                 <h1 style={{ marginBottom: "35px", color: "var(--greyBlue)" }}>
-                  In Depth Analysis and Purpose of DigiBeat's Digital
+                  A Brief Analysis and Purpose of DigiBeat's Digital
                   Stethoscope
                 </h1>
                 <h2 style={{ color: "var(--midBlue)" }}>

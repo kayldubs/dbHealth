@@ -136,7 +136,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           <Route exact path="/blog/healthyeating" element={<Tips5/>} />
           <Route exact path="/blog/10tips" element={<Tips10/>} />
           <Route exact path="/blog/quickglimpse" element={<WarHeartDisease/>} />
-          <Route exact path="/blog/feature2" element={<DigiBeatInt/>} />
+          {/* <Route exact path="/blog/feature2" element={<DigiBeatInt/>} /> */}
           <Route exact path="/blog/athomeuse" element={<HowTo/>} />
           <Route exact path='/contactForm' element={<Form/>} />
           </Routes>
