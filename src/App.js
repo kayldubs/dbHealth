@@ -140,6 +140,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           {/* <Route exact path="/blog/feature2" element={<DigiBeatInt/>} /> */}
           <Route exact path="/blog/athomeuse" element={<HowTo/>} />
           <Route exact path='/contactForm' element={<Form/>} />
+          <Route exact path='/esummary' element={<ESummary/>} />
           </Routes>
           
           <Footer/>
