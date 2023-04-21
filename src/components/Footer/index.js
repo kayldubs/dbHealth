@@ -117,6 +117,12 @@ function Footer() {
       </div>
       </div>
           <Copyright />
+          <p style={{textAlign:'center', fontSize:'12px', marginTop:'5px'}}>
+          The DigiBeat System is an investigational device and is not currently
+          approved for clinical use in any geography. CAUTION- Investigational
+          Device. Limited by Federal (or United States) Law to Investigational
+          Use. Exclusively for Clinical Investigation.
+        </p>
         </Container>
        </Box>
   );
