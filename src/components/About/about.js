@@ -14,6 +14,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CardHeader from '@mui/material/CardHeader';
+
 //import { useState } from 'react';
 //import animation framework 
 //import { motion } from "framer-motion";
@@ -93,6 +94,9 @@ export default function About() {
                             {/* <Button variant="contained">Our Blog</Button> */}
                             <a href='/faq' style={{textDecoration:'none'}}>
                             <Button variant="outlined">FAQ</Button>
+                            </a>
+                            <a style={{textDecoration:'none'}} href='/blog'>
+                            <Button variant="outlined">BLOG</Button>
                             </a>
                         </Stack>
                     </Container>

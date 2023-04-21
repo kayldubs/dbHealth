@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-//import components(pages to then insert into the return JXS function)
 import Nav from './components/Nav';
 import Features from './components/Features';
 import Form from './components/Contact/Form';
@@ -13,12 +12,13 @@ import { HeroData } from './components/Carousel/HeroData';
 import Platform from './components/Platform/Platform';
 import Faq from './components/FAQ/Faq.js';
 import About from './components/About/about';
-// import Payer from './components/Payer';
+import Blog from './components/Blog/Blog';
 // import Physician from './components/Physician';
 import Footer from './components/Footer';
 import Team from './components/Team/Team';
 import Team4 from './components/Team4/Team4';
-import Terms from './components/Regulatory/TermsOfUse';
+import Terms from './components/Regulatory/TermsOfUse'
+import Technology from './components/Blog/pages/Technology';
 
 //import CSS Boostrap 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,6 +26,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fontsource/expletus-sans"
 import { TextData } from './components/Carousel/TextData';
 import ESummary from './components/ESummary/ES';
+import HeroPost from './components/Blog/posts/HeroPost';
+import Cardiology from './components/Blog/pages/Cardiology';
+import RemoteMonitoring from './components/Blog/pages/RemoteMonitoring';
+import Science from './components/Blog/pages/Science';
+import Health from './components/Blog/pages/Health';
+import LifeStyle from './components/Blog/pages/LifeStyle';
+import AiBenefits from './components/Blog/posts/AiBenefits';
+import Silent from './components/Blog/posts/Silent';
+import Tips5 from './components/Blog/posts/Tips5';
+import Tips10 from './components/Blog/posts/Tips10';
+import WarHeartDisease from './components/Blog/posts/WarHeartDisease';
+import DigiBeatInt from './components/Blog/posts/DigiBeatInt';
+import HowTo from './components/Blog/posts/HowTo';
 
 
 
@@ -109,10 +122,24 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           <Route exact path="/regulatory" element={<>
           <Terms/>
           </>} /> 
-          <Route exact path="/contactForm" element={<>
-          <Form/>
-          </>} />
-          <Route exact path="/esummary" element={<ESummary/>} />
+          <Route exact path="/blog" element={<>
+          <Blog/>
+          </>} /> 
+          <Route exact path="/blog/heropost" element={<HeroPost/>} />
+          <Route exact path="/blog/technology" element={<Technology/>} />
+          <Route exact path="/blog/cardiology" element={<Cardiology/>} />
+          <Route exact path="/blog/remotemonitoring" element={<RemoteMonitoring/>} />
+          <Route exact path="/blog/science" element={<Science/>} />
+          <Route exact path="/blog/health" element={<Health/>} />
+          <Route exact path="/blog/lifestyle" element={<LifeStyle/>} />
+          <Route exact path="/blog/aibenefits" element={<AiBenefits/>} />
+          <Route exact path="/blog/silentheartattacks" element={<Silent/>} />
+          <Route exact path="/blog/healthyeating" element={<Tips5/>} />
+          <Route exact path="/blog/10tips" element={<Tips10/>} />
+          <Route exact path="/blog/quickglimpse" element={<WarHeartDisease/>} />
+          {/* <Route exact path="/blog/feature2" element={<DigiBeatInt/>} /> */}
+          <Route exact path="/blog/athomeuse" element={<HowTo/>} />
+          <Route exact path='/contactForm' element={<Form/>} />
           </Routes>
           
           <Footer/>
