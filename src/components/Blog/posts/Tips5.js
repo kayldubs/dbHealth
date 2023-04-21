@@ -77,13 +77,12 @@ const Tips5 = () => {
             </p>
             <h3 style={headerStyle}>1. Focus on Whole Foods</h3>
             <p>
-              With the help of AI, wireless stethoscopes can provide more
-              accurate diagnoses by analyzing heart and lung sounds in
-              real-time. AI algorithms can identify subtle changes in sound
-              patterns that may be indicative of underlying health conditions.
-              By alerting doctors to these changes, AI-integrated wireless
-              stethoscopes can help doctors make more accurate diagnoses,
-              leading to better treatment outcomes.
+              Whole foods, such as fruits, vegetables, whole grains, lean
+              proteins, and healthy fats, should make up the majority of your
+              diet. These foods are rich in vitamins, minerals, and antioxidants
+              that promote good heart health. Avoid processed and packaged
+              foods, as they are often high in sodium, sugar, and unhealthy
+              fats.
             </p>
             <CardMedia
               component="img"
@@ -96,24 +95,22 @@ const Tips5 = () => {
                 padding: "10px",
               }}
             />
-            <h3 style={headerStyle}>2. Remote Patient Monitoring</h3>
+            <h3 style={headerStyle}>
+              2. Reduce your intake of saturated and trans fats
+            </h3>
             <p>
-              With the ability to wirelessly transmit data, AI-integrated
-              wireless stethoscopes can be used for remote patient monitoring.
-              Patients can wear the stethoscope at home and transmit their heart
-              and lung sounds to their doctor, who can then analyze the data and
-              make informed decisions about their treatment plan. This feature
-              is especially useful for patients who live in remote areas or have
-              limited mobility.
+              Saturated and trans fats increase cholesterol levels and increase
+              the risk of heart disease. Limit your intake of red meat, full-fat
+              dairy products, fried foods, and processed snacks. Instead, choose
+              lean proteins such as chicken, fish, and legumes, and use healthy
+              fats like olive oil and avocado oil for cooking.
             </p>
-            <h3 style={headerStyle}>3. Better Patient Experience</h3>
+            <h3 style={headerStyle}>3. Add more fiber to your diet</h3>
             <p>
-              Traditional stethoscopes can be uncomfortable for patients,
-              especially those with chest hair or sensitive skin. Wireless
-              stethoscopes are more comfortable, and with the integration of AI,
-              doctors can diagnose patients quickly and with greater accuracy.
-              Patients no longer need to visit the doctor's office for a basic
-              check-up, and this can help reduce the overall cost of healthcare.
+              Fiber is an essential nutrient that helps to lower cholesterol
+              levels and reduce the risk of heart disease. Include fiber-rich
+              foods in your diet, such as whole grains, fruits, vegetables, and
+              legumes. Try to consume at least 25-30 grams of fiber per day.
             </p>
             <Paper
               elevation={0}
@@ -142,27 +139,23 @@ const Tips5 = () => {
                 Sign Up
               </Button>
             </Paper>
-            <h3 style={headerStyle}>4. Advanced Analytics</h3>
+            <h3 style={headerStyle}>4. Watch your sodium intake</h3>
             <p>
-              AI-integrated wireless stethoscopes can analyze a large amount of
-              data from multiple patients, allowing doctors to identify patterns
-              that may be indicative of larger health issues. This can help with
-              early detection of health conditions and allow for more targeted
-              treatment plans.
+              High levels of sodium can lead to high blood pressure, which
+              increases the risk of heart disease. Try to limit your sodium
+              intake to less than 2,300 milligrams per day. Avoid processed and
+              packaged foods that are often high in sodium, and instead, use
+              herbs and spices to flavor your meals.
             </p>
-            <h3 style={headerStyle}>5. Time-Saving</h3>
+            <h3 style={headerStyle}>5. Limit your alcohol consumption</h3>
             <p>
-              The AI-integration in wireless stethoscopes can also save time for
-              doctors by eliminating the need for them to listen to every heart
-              and lung sound individually. The AI algorithms can filter out
-              irrelevant sounds, such as background noise, and focus on the
-              important sounds. In conclusion, AI-integrated wireless
-              stethoscopes provide numerous benefits, including improved
-              accuracy of diagnoses, remote patient monitoring, a better patient
-              experience, advanced analytics, and time-saving. As AI continues
-              to evolve, we can expect to see even more benefits from its
-              integration with wireless stethoscopes, making healthcare more
-              efficient and effective for doctors and patients alike.
+              Excessive alcohol consumption can increase blood pressure and
+              contribute to weight gain, which increases the risk of heart
+              disease. Limit your alcohol consumption to one drink per day for
+              women and two drinks per day for men. Eating a heart-healthy diet
+              doesn't have to be complicated. By incorporating these tips into
+              your daily routine, you can promote good cardiovascular health and
+              reduce your risk of heart disease and stroke.
             </p>
             <Link variant="subtitle1" href="#"></Link>
           </div>
