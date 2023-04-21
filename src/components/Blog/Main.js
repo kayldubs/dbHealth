@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
-import Post1 from './posts/Post1';
+import HeroPost from './posts/HeroPost';
 
 function Main(props) {
   const { posts, title } = props;
@@ -15,7 +15,7 @@ function Main(props) {
       md={8}
       sx={{
         '& .markdown': {
-          py: 3,
+          p: 1,
         },
       }}
     >
@@ -23,7 +23,7 @@ function Main(props) {
         {title}
       </Typography>
       <Divider />
-      <Post1 />
+      <HeroPost/>
     </Grid>
   );
 }

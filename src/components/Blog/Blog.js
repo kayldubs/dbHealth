@@ -56,10 +56,6 @@ const featuredPosts = [
   },
 ];
 
-//const posts = [Post1 
-    //post2, post3
-//];
-
 const sidebar = {
   title: 'About Our Blog',
   description:
