@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import posthog from 'posthog-js';
+
+posthog.init('phc_zLY8vl7oYOdcyvM8NN5D2J8fQwHxpK9QGRHcvHOSioX', { api_host: 'https://app.posthog.com' })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
