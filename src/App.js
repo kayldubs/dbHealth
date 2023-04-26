@@ -28,8 +28,8 @@ import "@fontsource/expletus-sans"
 import { TextData } from './components/Carousel/TextData';
 
 // cookie imports
-import CookieBanner from './components/Cookies/CookiesBanner';
-import posthog from 'posthog-js';
+// import CookieBanner from './components/Cookies/CookiesBanner';
+// import posthog from 'posthog-js';
 
 
 
@@ -94,7 +94,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
     <div className='App'> 
         {/* <Provider> */}
           <Nav />
-          {posthog.has_opted_in_capturing()||posthog.has_opted_out_capturing() ? null : <CookieBanner />}
+          {/* {posthog.has_opted_in_capturing()||posthog.has_opted_out_capturing() ? null : <CookieBanner />} */}
           <Routes>
               <Route path="/" element={<>
               <ImageHero slides={HeroData}/>
