@@ -37,8 +37,13 @@ import Silent from './components/Blog/posts/Silent';
 import Tips5 from './components/Blog/posts/Tips5';
 import Tips10 from './components/Blog/posts/Tips10';
 import WarHeartDisease from './components/Blog/posts/WarHeartDisease';
-import DigiBeatInt from './components/Blog/posts/DigiBeatInt';
+//import DigiBeatInt from './components/Blog/posts/DigiBeatInt';
 import HowTo from './components/Blog/posts/HowTo';
+import CookiePolicy from './components/Cookies/CookiesPolicy';
+
+// cookie imports
+// import CookieBanner from './components/Cookies/CookiesBanner';
+// import posthog from 'posthog-js';
 
 
 
@@ -103,6 +108,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
     <div className='App'> 
         {/* <Provider> */}
           <Nav />
+          {/* {posthog.has_opted_in_capturing()||posthog.has_opted_out_capturing() ? null : <CookieBanner />} */}
           <Routes>
               <Route path="/" element={<>
               <ImageHero slides={HeroData}/>
@@ -141,6 +147,12 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           <Route exact path="/blog/athomeuse" element={<HowTo/>} />
           <Route exact path='/contactForm' element={<Form/>} />
           <Route exact path='/esummary' element={<ESummary/>} />
+          <Route exact path="/cookiepolicy" element={<>
+          <CookiePolicy/>
+          </>} /> 
+          <Route exact path="/contactForm" element={<>
+          <Form/>
+          </>} />
           </Routes>
           
           <Footer/>

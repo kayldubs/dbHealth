@@ -89,6 +89,15 @@ function Footer() {
         Terms of Use
       </Link>
       {/* <Link color="inherit" href="/510(k)">
+          <div className="section2">
+            <Typography fontWeight="bold">Regulatory</Typography>
+            <Link color="inherit" href="/regulatory">
+              Terms of Use
+            </Link>
+            <Link color="inherit" href="/cookiepolicy">
+              Cookie Policy
+            </Link>
+            {/* <Link color="inherit" href="/510(k)">
         510(k)
       </Link>
       <Link color="inherit" href="/hippa">
