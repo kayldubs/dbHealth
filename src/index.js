@@ -5,10 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { PostHogProvider } from 'posthog-js/react';
+import posthog from 'posthog-js';
 
 const options = {
   api_host: process.env.REACT_APP_PUBLIC_POSTHOG_HOST,
 }
+
+posthog.init('phc_zLY8vl7oYOdcyvM8NN5D2J8fQwHxpK9QGRHcvHOSioX', {
+  api_host: 'https://app.posthog.com' })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

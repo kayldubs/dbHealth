@@ -26,6 +26,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import Expletus Sans Font
 import "@fontsource/expletus-sans"
 import { TextData } from './components/Carousel/TextData';
+import CookiePolicy from './components/Cookies/CookiesPolicy';
 
 // cookie imports
 // import CookieBanner from './components/Cookies/CookiesBanner';
@@ -113,6 +114,9 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
             </>} />
           <Route exact path="/regulatory" element={<>
           <Terms/>
+          </>} /> 
+          <Route exact path="/cookiepolicy" element={<>
+          <CookiePolicy/>
           </>} /> 
           <Route exact path="/contactForm" element={<>
           <Form/>

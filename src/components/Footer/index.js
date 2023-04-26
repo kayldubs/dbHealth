@@ -70,6 +70,9 @@ function Footer() {
             <Link color="inherit" href="/regulatory">
               Terms of Use
             </Link>
+            <Link color="inherit" href="/cookiepolicy">
+              Cookie Policy
+            </Link>
             {/* <Link color="inherit" href="/510(k)">
         510(k)
       </Link>
