@@ -38,6 +38,7 @@ import Tips10 from './components/Blog/posts/Tips10';
 import WarHeartDisease from './components/Blog/posts/WarHeartDisease';
 import DigiBeatInt from './components/Blog/posts/DigiBeatInt';
 import HowTo from './components/Blog/posts/HowTo';
+import HealthFAQ from './components/Blog/posts/HealthFAQ';
 
 
 
@@ -139,6 +140,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           {/* <Route exact path="/blog/feature2" element={<DigiBeatInt/>} /> */}
           <Route exact path="/blog/athomeuse" element={<HowTo/>} />
           <Route exact path='/contactForm' element={<Form/>} />
+          <Route exact path='/blog/healthFAQ' element={<HealthFAQ/>} />
           </Routes>
           <Footer/>
           {/* </Provider> */}
