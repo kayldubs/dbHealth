@@ -44,6 +44,7 @@ import CookiePolicy from './components/Cookies/CookiesPolicy';
 // cookie imports
 // import CookieBanner from './components/Cookies/CookiesBanner';
 // import posthog from 'posthog-js';
+import HealthFAQ from './components/Blog/posts/HealthFAQ';
 
 
 
@@ -153,6 +154,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           <Route exact path="/contactForm" element={<>
           <Form/>
           </>} />
+          <Route exact path='/blog/healthFAQ' element={<HealthFAQ/>} />
           </Routes>
           
           <Footer/>
