@@ -35,15 +35,15 @@ export const TechData = [
         imgLabel:"hand clutching cheast, in pain, experiencing a heart attack",
         link:"/blog/silentheartattacks"
     },
-    // {
-    //     id: 5,
-    //     title: "Why Cardiologist should integrate DigiBeat's Digital Stethoscope into their practices",
-    //     date:'April 13',
-    //     description:"Learn the technological, patient, and economic benefits of the DigiBeat stethoscope.",
-    //     image:"https://mcusercontent.com/f78a01ed120667028e9e65574/images/66bc72a6-e7c4-4221-4b9f-53eb626900f8.png",
-    //     imgLabel:"Shows DigiBeat's wireless digital stethoscope next to ipad interface",
-    //     link:"/blog/feature2"
-    // },
+    {
+        id: 5,
+        title: "Why Cardiologist should integrate DigiBeat's Digital Stethoscope into their practices",
+        date:'April 13',
+        description:"Learn the technological, patient, and economic benefits of the DigiBeat stethoscope.",
+        image:"https://mcusercontent.com/f78a01ed120667028e9e65574/images/66bc72a6-e7c4-4221-4b9f-53eb626900f8.png",
+        imgLabel:"Shows DigiBeat's wireless digital stethoscope next to ipad interface",
+        link:"/blog/feature2"
+    },
     {
         id: 6,
         title: "Why a Digital Stethoscope?",
@@ -100,6 +100,15 @@ export const CardiologyData = [
         image:"https://mcusercontent.com/f78a01ed120667028e9e65574/images/e63edfae-e12a-3fac-f9b2-2fb44cb63416.jpeg",
         imgLabel:"Shows a heart with earth printed on it in the hands of a physician",
         link:"/blog/healthFAQ"
+    },
+    {
+        id: 6,
+        title: "Why Cardiologist should integrate DigiBeat's Digital Stethoscope into their practices",
+        date:'April 13',
+        description:"Learn the technological, patient, and economic benefits of the DigiBeat stethoscope.",
+        image:"https://mcusercontent.com/f78a01ed120667028e9e65574/images/66bc72a6-e7c4-4221-4b9f-53eb626900f8.png",
+        imgLabel:"Shows DigiBeat's wireless digital stethoscope next to ipad interface",
+        link:"/blog/feature2"
     },
 ]
 
@@ -161,15 +170,15 @@ export const ScienceData = [
         imgLabel:"shows a couple happily interacting with the digibeat device in their own home",
         link:"/blog/whydigital"
     },
-    // {
-    //     id: 4,
-    //     title: "Why Cardiologist should integrate DigiBeat's Digital Stethoscope into their practices",
-    //     date:'April 13',
-    //     description:"Learn the technological, patient, and economic benefits of the DigiBeat stethoscope.",
-    //     image:"https://mcusercontent.com/f78a01ed120667028e9e65574/images/66bc72a6-e7c4-4221-4b9f-53eb626900f8.png",
-    //     imgLabel:"Shows DigiBeat's wireless digital stethoscope next to ipad interface",
-    //     link:"/blog/feature2"
-    // },
+    {
+        id: 4,
+        title: "Why Cardiologist should integrate DigiBeat's Digital Stethoscope into their practices",
+        date:'April 13',
+        description:"Learn the technological, patient, and economic benefits of the DigiBeat stethoscope.",
+        image:"https://mcusercontent.com/f78a01ed120667028e9e65574/images/66bc72a6-e7c4-4221-4b9f-53eb626900f8.png",
+        imgLabel:"Shows DigiBeat's wireless digital stethoscope next to ipad interface",
+        link:"/blog/feature2"
+    },
     {
         id: 5,
         title: "5 Tips for Eating a Heart Healthy Diet",

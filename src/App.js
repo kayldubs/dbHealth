@@ -37,7 +37,7 @@ import Silent from './components/Blog/posts/Silent';
 import Tips5 from './components/Blog/posts/Tips5';
 import Tips10 from './components/Blog/posts/Tips10';
 import WarHeartDisease from './components/Blog/posts/WarHeartDisease';
-//import DigiBeatInt from './components/Blog/posts/DigiBeatInt';
+import DigiBeatInt from './components/Blog/posts/DigiBeatInt';
 import HowTo from './components/Blog/posts/HowTo';
 import CookiePolicy from './components/Cookies/CookiesPolicy';
 
@@ -144,7 +144,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           <Route exact path="/blog/healthyeating" element={<Tips5/>} />
           <Route exact path="/blog/10tips" element={<Tips10/>} />
           <Route exact path="/blog/quickglimpse" element={<WarHeartDisease/>} />
-          {/* <Route exact path="/blog/feature2" element={<DigiBeatInt/>} /> */}
+          <Route exact path="/blog/feature2" element={<DigiBeatInt/>} />
           <Route exact path="/blog/athomeuse" element={<HowTo/>} />
           <Route exact path='/contactForm' element={<Form/>} />
           <Route exact path='/esummary' element={<ESummary/>} />

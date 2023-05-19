@@ -24,9 +24,9 @@ const sections = [
 ];
 
 const mainFeaturedPost = {
-  title: "A Brief Overview of DigiBeat's Digital Stethoscope",
+  title: "Why Cardiologist should integrate DigiBeat's Digital Stethoscope into their Practices",
   description:
-    "This article will expolore the reasons and features that make our digital stethoscope the best choice for the future of medicine",
+    "Learn the technological, patient, and economic benefits of the DigiBeat stethoscope.",
   image: 'https://mcusercontent.com/f78a01ed120667028e9e65574/images/a6a2b96f-6aba-25b3-534a-6a0946c3f6cf.jpg',
   imageText: 'main image description',
   linkText: 'Continue reading…',
