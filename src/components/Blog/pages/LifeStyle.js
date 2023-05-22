@@ -36,7 +36,7 @@ function LifeStyle() {
               align="center"
               color="text.primary"
             >
-              Life Style Blog
+              Life Style 
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               Explore articles about DigiBeat and related lifestyle choices.

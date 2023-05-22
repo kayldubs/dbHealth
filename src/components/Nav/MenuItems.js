@@ -14,7 +14,7 @@ export const MenuItems = [
         Cname:'nav-links'
     },
     {
-        title: 'Blog',
+        title: 'Research',
         url: '/blog',
         Cname:'nav-links'
     },

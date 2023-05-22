@@ -57,7 +57,7 @@ const featuredPosts = [
 ];
 
 const sidebar = {
-  title: 'About Our Blog',
+  title: 'About Our Research',
   description:
     "Here you will find everything you need to know about DigiBeat's portable and wireless technology, how it improve heart disease prevention, benefits of incorporating this device into your caridology practices, and much more general health information.",
   social: [
@@ -75,7 +75,7 @@ export default function Blog() {
       <CssBaseline />
       <Container maxWidth="lg" padding="50px">
         <main style={{padding:'50px 50px'}}>
-        <h1 title="Blog" sections={sections} style={{fontFamily:'Expletus Sans', textAlign:'center', fontSize:'3rem', marginBottom:'50px'}}>BLOG</h1>
+        <h1 title="Blog" sections={sections} style={{fontFamily:'Expletus Sans', textAlign:'center', fontSize:'3rem', marginBottom:'50px'}}>Research Center</h1>
         <Header title="Blog" sections={sections} />
           <MainFeaturedPost post={mainFeaturedPost} style={{paddingTop:'50px'}} />
           <Grid container spacing={4}>

@@ -36,7 +36,7 @@ function Technology() {
               align="center"
               color="text.primary"
             >
-              Technology Blog
+              Technology 
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph style={{marginTop:'16px'}}>
               Explore articles about DigiBeat and other medical technologies.

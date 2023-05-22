@@ -33,7 +33,7 @@
     .footer {
         flex-direction: column;
         align-items: flex-start;
-        max-height: 410px;
+        max-height: 440px;
     }
     .footerType {
         margin-top: 160px;

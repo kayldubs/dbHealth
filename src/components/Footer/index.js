@@ -49,12 +49,16 @@ function Footer() {
           <Link color="inherit" href="/" >
         Home
       </Link>
-      <Link color="inherit" href="/faq">
-        FAQ
-      </Link>
       <Link color="inherit" href="/about">
         About
       </Link>
+      <Link color="inherit" href="/blog">
+        Research
+      </Link>
+      <Link color="inherit" href="/faq">
+        FAQ
+      </Link>
+      
       </div>
       {/* <div className='footerType'>
           <Card>
