@@ -53,11 +53,12 @@ function Footer() {
         About
       </Link>
       <Link color="inherit" href="/blog">
-        Blog
+        Research
       </Link>
       <Link color="inherit" href="/faq">
         FAQ
       </Link>
+      
       </div>
       {/* <div className='footerType'>
           <Card>

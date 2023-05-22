@@ -36,7 +36,7 @@ function Health() {
               align="center"
               color="text.primary"
             >
-              Health Blog
+              Health Research
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               Explore articles about DigiBeat and other health topics.

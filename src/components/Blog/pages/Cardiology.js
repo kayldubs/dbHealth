@@ -36,7 +36,7 @@ function Cardiology() {
               align="center"
               color="text.primary"
             >
-              Cardiology Blog
+              Cardiology
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               Explore articles about DigiBeat and it's benefits for Cardiology.

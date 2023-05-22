@@ -36,7 +36,7 @@ function Science() {
               align="center"
               color="text.primary"
             >
-              Science Blog
+              Science 
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               Explore articles about DigiBeat and other science related topics.

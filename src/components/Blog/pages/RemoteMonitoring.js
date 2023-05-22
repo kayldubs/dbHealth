@@ -36,7 +36,7 @@ function RemoteMonitoring() {
               align="center"
               color="text.primary"
             >
-              Remote Monitoring Blog
+              Remote Monitoring 
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               Explore articles about DigiBeat and remote monitoring benefits.
