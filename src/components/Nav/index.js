@@ -2,12 +2,18 @@ import { CardMedia } from '@mui/material';
 import Logo from '../../assests/imgs/DBSoloLogo.svg';
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
+import { withStyles } from '@mui/material';
 import  '../Nav/Nav.css'
 
- 
-
+const styles = {
+    customRoot: {
+        display: "flex",
+        objectFit: "contain"
+    },
+  };
 
 class Nav extends Component {
+  
     state = { clicked: false }
 
     handleClick = () => {
@@ -15,10 +21,11 @@ class Nav extends Component {
     }
 
     render() {
+        const { classes } = this.props;
         return(
             <nav position="sticky" className='NavItems'>
                 <a href="/">
-                <CardMedia className='navbar-logo'
+                <CardMedia className='navbar-logo' styles={{ root: classes.customRoot}}
                          component="img"
                          alt="Your logo."
                          image={Logo}
@@ -47,4 +54,4 @@ class Nav extends Component {
     }
 }
 
-export default Nav; 
+export default withStyles(styles)(Nav);
