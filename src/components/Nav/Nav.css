@@ -96,16 +96,13 @@ a.nav-links {
     justify-content: space-evenly;
     flex-wrap: nowrap;
   }
-  .logo-text {
-    margin-right: 4rem;
-  }
 }
 
 @media screen and (max-width: 960px) {
     .navbar-logo {
         width: 150px;
         height: 75px;
-        margin-right: 1rem;
+        /* margin-right: 1rem; */
     }
   .NavItems {
     position: relative;
