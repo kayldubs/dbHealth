@@ -75,10 +75,10 @@ export default function Team() {
           />
           <CardContent>
             <div className="flex-container" alignItems="center">
-              <Typography variant="h5" component="h2" align="center">
+              <Typography variant="h5" component="h2" align="center" fontFamily="Source Sans Pro" fontWeight="bold">
                 Winston T. Richards, MD
               </Typography>
-              <Typography align="center">CMO</Typography>
+              <Typography align="center" fontFamily="Source Sans Pro">CMO</Typography>
 
               <Typography
                 style={{
@@ -87,6 +87,7 @@ export default function Team() {
                   height: "0px",
                   textAlign: "center",
                   marginLeft: "10px",
+                  fontFamily:"Source Sans Pro"
                 }}
                 className="text"
               >
@@ -121,10 +122,10 @@ export default function Team() {
           />
           <CardContent>
             <div className="flex-container" alignItems="center">
-              <Typography variant="h5" component="h2" align="center">
+              <Typography variant="h5" component="h2" align="center" fontFamily="Source Sans Pro" fontWeight="bold">
                 Clifford Steele
               </Typography>
-              <Typography align="center">CEO</Typography>
+              <Typography align="center" fontFamily="Source Sans Pro">CEO</Typography>
 
               <Typography
                 style={{
@@ -133,6 +134,7 @@ export default function Team() {
                   height: "0px",
                   textAlign: "center",
                   marginLeft: "0px",
+                  fontFamily:"Source Sans Pro"
                 }}
                 className="text"
               >
@@ -165,10 +167,10 @@ export default function Team() {
           />
           <CardContent>
             <div className="flex-container" alignItems="center">
-              <Typography variant="h5" component="h2" align="center">
+              <Typography variant="h5" component="h2" align="center" fontFamily="Source Sans Pro" fontWeight="bold">
                 Karl Dockendorf
               </Typography>
-              <Typography align="center">CTO</Typography>
+              <Typography align="center" fontFamily="Source Sans Pro">CTO</Typography>
 
               <Typography
                 style={{
@@ -177,6 +179,7 @@ export default function Team() {
                   height: "0px",
                   textAlign: "center",
                   marginLeft: "10px",
+                  fontFamily:"Source Sans Pro"
                 }}
                 className="text"
               >

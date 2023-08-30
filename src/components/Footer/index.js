@@ -35,15 +35,15 @@ function Footer() {
         <Container>
         <div className='footer' alignContent="stretch">
         <div className='footerType'>
-          <Typography fontWeight='bold'>
+          <Typography fontWeight='bold' fontFamily="Source Sans Pro">
             Contact
           </Typography>
-          <Typography className=''>
+          <Typography fontFamily="Source Sans Pro" fontWeight='normal'>
               Support@digibeat.health
           </Typography>
           </div>
           <div className='section1'>
-          <Typography fontWeight='bold'>
+          <Typography fontWeight='bold' fontFamily="Source Sans Pro">
             Navigation
         </Typography>
           <Link color="inherit" href="/" >
@@ -75,7 +75,7 @@ function Footer() {
           </Card>
       </div> */}
       <div className='section2'>
-      <Typography fontWeight='bold'>
+      <Typography fontWeight='bold' fontFamily="Source Sans Pro">
             Follow Us
         </Typography>
         <Link color="inherit" href="https://twitter.com/DigiBeatHealth">
@@ -86,7 +86,7 @@ function Footer() {
       </Link>
       </div>
       <div className='section2'>
-      <Typography fontWeight='bold'>
+      <Typography fontWeight='bold' fontFamily="Source Sans Pro">
             Regulatory
         </Typography>
         <Link color="inherit" href="/regulatory">
@@ -103,7 +103,7 @@ function Footer() {
       </Link> */}
       </div>
       <div className='section2' style={{marginBottom:'180px'}}>
-      <Typography fontWeight='bold'>
+      <Typography fontWeight='bold' fontFamily="Source Sans Pro">
             Resources
         </Typography>
         <Link color="inherit" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7407266/">

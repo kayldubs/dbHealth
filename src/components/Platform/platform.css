@@ -42,17 +42,6 @@ font-size: 18px;
 padding-bottom: 2rem;
 }
 
-/* .platMedia {
-    padding-left: 60px;
-}
-
-.platMedia2 {
-    padding-left: 100px;
-}
-.platMedia3 {
-    padding-left: 50px;
-} */
-
 /* start media queries */
 
 @media screen and (max-width: 960px) {
@@ -74,8 +63,8 @@ padding-bottom: 2rem;
         justify-content: center;
     }
     .platMedia, .platMedia2, .platMedia3 {
-        padding-left: 0px;
-        padding-right: 0px;
+        align-items: flex-start;
+        justify-content: flex-start;
         width: 200px;
         height: 200px;
     }
@@ -86,16 +75,5 @@ padding-bottom: 2rem;
         display: flex;
         justify-content: center;
         flex-wrap: nowrap;
-    }
-    .platMedia3 {
-        padding-right: 20px;
-        padding-left: 0px;
-    }
-    .platMedia2 {
-        padding-left: 30px;
-    }
-    .platMedia {
-        padding-left: 0px;
-        padding-right: 10px;
     }
 }

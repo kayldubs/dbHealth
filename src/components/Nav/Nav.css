@@ -1,5 +1,6 @@
-ul {
+ul.nav-menu {
   list-style: none;
+  padding-left: 0rem;
 }
 
 .NavItems {
@@ -35,8 +36,8 @@ ul {
   grid-gap: 10px;
   text-align: center;
   width: 70vw;
-  justify-content: end;
-  margin-right: 2rem;
+  justify-content: center;
+  /* margin-right: 2rem; */
 }
 
 .nav-links {
@@ -82,6 +83,7 @@ a.nav-links {
     height: 50px;
     width: 100px;
     padding: 10px;
+    object-fit: contain;
   }
   .nav-links {
     font-size: 1rem;
@@ -127,7 +129,6 @@ a.nav-links {
   }
 
   .nav-links {
-    text-align: center;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;

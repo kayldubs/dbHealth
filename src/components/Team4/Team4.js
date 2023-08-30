@@ -102,15 +102,15 @@ function Featured() {
           <Typography
             component="h2"
             variant="h5"
-            style={{ paddingTop: "20px" }}
+            style={{ paddingTop: "20px", fontFamily:"Source Sans Pro", fontWeight:"bold" }}
           >
             Calvin Bond
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary">
+          <Typography variant="subtitle1" color="text.secondary" fontFamily="Source Sans Pro">
             Electrical/Mechanical Engineer
           </Typography>
           {isHovering && (
-          <Typography variant="subtitle2" color="text.secondary">
+          <Typography variant="subtitle2" color="text.secondary" fontFamily="Source Sans Pro">
             Calvin earned his BS/ME degrees in Mechanical Engineering from the
             University of Florida. Since graduating he has worked in product
             development and design engineering for medical, professional audio,
@@ -146,15 +146,15 @@ function Featured() {
           <Typography
             component="h2"
             variant="h5"
-            style={{ paddingTop: "20px" }}
+            style={{ paddingTop: "20px", fontFamily:"Source Sans Pro", fontWeight:"bold" }}
           >
             Brandon Popp
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary">
+          <Typography variant="subtitle1" color="text.secondary" fontFamily="Source Sans Pro">
             Systems Analyst/IT
           </Typography>
           {isHovering && (
-            <Typography variant="subtitle2" color="text.secondary">
+            <Typography variant="subtitle2" color="text.secondary" fontFamily="Source Sans Pro">
               Brandon attended Florida Polytechnic University where he earned a
               BS in Computer Science and Information Technology. He has 5 years
               of experience in both the Insurance and Aerospace industries as a
@@ -189,15 +189,15 @@ function Featured() {
           <Typography
             component="h2"
             variant="h5"
-            style={{ paddingTop: "20px" }}
+            style={{ paddingTop: "20px", fontFamily:"Source Sans Pro", fontWeight:"bold" }}
           >
             Kaylee Stevens
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary">
+          <Typography variant="subtitle1" color="text.secondary" fontFamily="Source Sans Pro">
             Graphic Designer/Developer
           </Typography>
           {isHovering && (
-            <Typography variant="subtitle2" color="text.secondary">
+            <Typography variant="subtitle2" color="text.secondary" fontFamily="Source Sans Pro">
               Kaylee started in her field with an Associates degree from Miami
               Dade College with a focus in graphic design. Expanding her skill
               set she recieved her certification in full stack development from

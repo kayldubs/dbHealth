@@ -14,4 +14,6 @@ body {
   --greyBlue:rgb(106,138,175);
   --offWhite: rgb(226,232,221);
   --warmTaupe: rgb(205,198,174);
+  --primaryFont: font-family:"Expletus Sans";
+  --secondaryFont: font-family:"Source San Pro";
 }
