@@ -73,8 +73,8 @@ export default function Blog() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Container maxWidth="lg" padding="50px">
-        <main style={{padding:'50px 50px'}}>
+      <Container maxWidth="lg" padding="50px" >
+        <main style={{padding:'50px 50px', marginTop:"20px"}}>
         <h1 title="Blog" sections={sections} style={{fontFamily:'Expletus Sans', textAlign:'center', fontSize:'3rem', marginBottom:'50px'}}>Research Center</h1>
         <Header title="Blog" sections={sections} />
           <MainFeaturedPost post={mainFeaturedPost} style={{paddingTop:'50px'}} />

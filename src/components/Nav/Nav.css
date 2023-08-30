@@ -25,6 +25,8 @@ ul.nav-menu {
   font-size: 30px;
   font-family: Expletus Sans;
   color: #000000;
+  display: flex;
+  justify-content: flex-start !important;
 }
 
 .nav .a {
@@ -68,6 +70,7 @@ a.nav-links {
 
 .navbar-logo {
   object-fit: contain !important;
+  width: 150px !important;
 }
 
 
@@ -170,6 +173,7 @@ a.nav-links {
     display: none;
   }
   .logo-text {
+    display: flex;
     justify-content: flex-start;
     font-size: 36px;
   }

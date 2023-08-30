@@ -72,6 +72,7 @@ export default function About() {
               align="center"
               p="50px"
               fontFamily="Expletus Sans"
+              marginTop="20px"
             >
               What We Do
             </Typography>
