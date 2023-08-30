@@ -96,6 +96,10 @@ a.nav-links {
     justify-content: space-evenly;
     flex-wrap: nowrap;
   }
+  .logo-text {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -166,7 +170,7 @@ a.nav-links {
     display: none;
   }
   .logo-text {
-    margin-left: 3rem;
+    justify-content: flex-start;
     font-size: 36px;
   }
   .navbar-logo {
