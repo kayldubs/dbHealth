@@ -70,7 +70,7 @@ a.nav-links {
 
 .navbar-logo {
   object-fit: contain !important;
-  width: 150px !important;
+  width: 100px !important;
 }
 
 
@@ -108,7 +108,7 @@ a.nav-links {
 @media screen and (max-width: 960px) {
     .navbar-logo {
         width: 150px;
-        height: 75px;
+        height: 100px;
         /* margin-right: 1rem; */
     }
   .NavItems {
