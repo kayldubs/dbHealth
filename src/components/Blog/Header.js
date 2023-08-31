@@ -28,14 +28,8 @@ const shareUrl = window.location;
 
   return (
     <React.Fragment>
-      
-      <Toolbar
-        className='grid-container'
-        component="nav"
-        variant="dense"
-      >
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div>
+        <div >
+          <div className='grid-container'>
             {sections.map((section) => (
               <Link
                 key={section.title}
@@ -51,7 +45,6 @@ const shareUrl = window.location;
             ))}
           </div>
         </div>
-      </Toolbar>
       <Toolbar
       component="nav"
       variant="dense"

@@ -74,8 +74,8 @@ export default function Blog() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg" padding="50px" >
-        <main style={{padding:'50px 50px', marginTop:"20px"}}>
-        <h1 title="Blog" sections={sections} style={{fontFamily:'Expletus Sans', textAlign:'center', fontSize:'3rem', marginBottom:'50px'}}>Research Center</h1>
+        <main style={{ marginTop:"60px"}}>
+        <h1 title="Blog" sections={sections} style={{fontFamily:'Expletus Sans', textAlign:'center', fontSize:'3rem'}}>Research Center</h1>
         <Header title="Blog" sections={sections} />
           <MainFeaturedPost post={mainFeaturedPost} style={{paddingTop:'50px'}} />
           <Grid container spacing={4}>

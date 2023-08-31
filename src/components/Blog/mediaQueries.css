@@ -1,15 +1,13 @@
 .grid-container {
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    /* display: grid; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 @media (max-width: 960px) {
     .grid-container {
-      display: grid;
       grid-template-columns: repeat(3, 1fr);
-      /* gap: 16px; */
-      /* padding: 16px; */
     }
 
     .grid-item {
