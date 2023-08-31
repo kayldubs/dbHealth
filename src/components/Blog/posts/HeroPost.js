@@ -9,15 +9,6 @@ import Header from "../Header";
 import { Button } from "react-bootstrap";
 import { useState } from "react";
 
-const sections = [
-  { title: "Technology", url: "/blog/technology" },
-  { title: "Cardiology", url: "/blog/cardiology" },
-  { title: "Remote Monitoring", url: "/blog/remotemonitoring" },
-  { title: "Science", url: "/blog/science" },
-  { title: "Health", url: "/blog/health" },
-  { title: "Life Style", url: "/blog/lifestyle" },
-  { title: "Back to Blog Home", url: "/blog" },
-];
 const HeroPost = () => {
   const [isHover, setIsHover] = useState(false);
 
@@ -37,8 +28,7 @@ const HeroPost = () => {
   };
   return (
     <Container>
-      <Box style={{ padding: "50px 50px" }}>
-        <Header title="Blog" sections={sections} />
+      <Box>
           <Card
             style={{
               diplay: "flex",

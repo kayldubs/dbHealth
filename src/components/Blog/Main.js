@@ -19,7 +19,7 @@ function Main(props) {
         },
       }}
     >
-      <Typography variant="h2" gutterBottom style={{fontFamily:'Expletus Sans', textAlign:'center', fontSize:'3rem', marginBottom:'50px'}}>
+      <Typography variant="h2" gutterBottom style={{fontFamily:'Expletus Sans', textAlign:'center', fontSize:'3rem'}}>
         {title}
       </Typography>
       <Divider />

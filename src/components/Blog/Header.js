@@ -7,6 +7,9 @@ import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import { useState } from "react";
+import "./mediaQueries.css"
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 import {
   FacebookShareButton,
@@ -20,60 +23,40 @@ import {
 function Header(props) {
   const { sections, title } = props;
 
-  const btnStyle = {
-    textDecoration: "none",
-    color:'#000000',
-    borderRadius: "20px",
-    borderColor: "transparent",
-    backgroundColor: "rgb(39,170,225)",
-    margin:'10px'
-  };
-
-  const btnStyle2 = {
-    textDecoration: "none",
-    textColor:'#000000',
-    border:'1px solid',
-    borderRadius: "20px",
-    borderColor: "#27aae1",
-    margin:'10px'
-  };
 
 const shareUrl = window.location;
 
   return (
     <React.Fragment>
+      
       <Toolbar
+        className='grid-container'
         component="nav"
         variant="dense"
-        sx={{ justifyContent: 'space-between', overflowX: 'auto' }}
       >
-        {sections.map((section) => (
-          <Link
-            color="inherit"
-            noWrap
-            key={section.title}
-            variant="body2"
-            href={section.url}
-            sx={{ p: 1, flexShrink: 0 }}
-          >
-            {section.title}
-          </Link>
-        ))}
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div>
+            {sections.map((section) => (
+              <Link
+                key={section.title}
+                color="inherit"
+                noWrap
+                variant="body2"
+                href={section.url}
+                sx={{ p: 1, flexShrink: 0 }}
+                className="grid-item"
+              >
+                {section.title}
+              </Link>
+            ))}
+          </div>
+        </div>
       </Toolbar>
       <Toolbar
       component="nav"
       variant="dense"
       sx={{ display:'flex', flexDirection:'row', overflowX: 'auto', justifyContent:'right' }}
       >
-        {/* <div style={{display:'flex', alignItems:'center'}}>
-        <Typography style={{marginRight:'10px'}}>FOLLOW US:</Typography>
-        <Button href="https://twitter.com/DigiBeatHealth" style={btnStyle}>
-          Twitter
-        </Button>
-        <Button href="https://www.linkedin.com/company/digibeat-health/" style={btnStyle2}>
-          LinkedIn
-        </Button>
-        </div> */}
         <div style={{display:'flex', alignItems:'center'}}>
         <Typography style={{marginRight:'10px'}}>SHARE:</Typography>
         <FacebookShareButton url={shareUrl}>
